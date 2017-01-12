@@ -1,0 +1,129 @@
+.content{
+	padding-top: 20px;
+	background: rgb(232,232,232);
+}
+/*注册区域头部*/
+.regHead{	
+	padding: 0 38px;
+	overflow: hidden;
+	position: relative;
+}
+/*按钮区域*/
+.regHead-tabs{
+	float: left;
+}
+.regHead-tabs li{
+	float: left;
+	position: relative;
+	width: 161px;
+	height: 36px;
+	margin-right: 7px;
+	text-align: center;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	overflow: hidden;
+	line-height: 36px;
+}
+.tabs-mail i{
+	display: inline-block;
+	width: 16px;
+	height: 12px;
+	background: url(../../img/login/mail.png);
+}
+.tabs-phone i{
+	vertical-align: text-bottom;
+	display: inline-block;
+	width: 11px;
+	height: 16px;
+	background: url(../../img/login/phone.png);
+}
+/*tab未选中*/
+.tabs-off{
+	color: rgb(33,63,123);
+	background: white;
+	border: 1px solid  rgb(197,197,197);
+	border-bottom: none;
+}
+.tabs-off em{
+	display: none;
+}
+/*tab已选中*/
+.tabs-on{
+	background: rgb(33,63,123);
+	border: 1px solid  rgb(33,63,123);
+	border-bottom: none;
+	color: white;
+}
+.tabs-on em{
+	width: 7px;
+	height: 5px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -2px;
+	margin: 0 auto;
+	background: url(../../img/login/sanjiao.jpg);
+}
+/*已有账号*/
+.regHead-login{
+	position: absolute;
+	bottom: 0;
+	right: 38px;
+	font-size: 12px;
+  	font-family: "SimSun";
+  	color: rgb(94, 104, 113);
+}
+.regHead-login a{
+	color: rgb(25,120,207);
+}
+/*注册主体*/
+.regMain{
+	padding: 32px 35px 30px 35px;
+	height: 524px;
+	box-sizing: border-box;
+	border: 1px solid rgb(197,197,197);
+	background: white;
+}
+/*每一块注册框*/
+.regMain .regMain-dl{
+	position: relative;
+	padding: 10px 0px 9px 16px;
+}
+.regMain-dl dt{
+	position: absolute;
+	width: 61px;
+	text-align: right;
+	line-height: 1.8;
+	font-size: 14px;
+  	font-family: "Adobe Heiti Std";
+  	color: rgb(53, 53, 53);
+}
+.regMain-dd{
+	padding-left: 73px;
+}
+
+.regMain-dd input{
+	border: 1px solid rgb(197,197,197);
+	width: 285px;
+	height: 22px;
+}
+.regMain-dd span{
+	display: inline-block;
+	border: 1px solid #d3edfb;
+	background: #ebf7fe;
+	padding: 3px 9px;
+	font-size: 12px;
+  	font-family: "SimSun";
+  	color: rgb(102, 102, 102);
+}
+.regMain-tips i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../../img/login/tip.png);
+	margin-right: 3px;
+	vertical-align: middle;
+}
+.regMain-tips a{
+	color: rgb(25,120,207);
+}
