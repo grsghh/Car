@@ -1,0 +1,277 @@
+.box-login{
+	background: #e9e9e9;
+	padding-bottom: 35px;
+}
+.box-login .rContainer{
+	border: 1px solid #C5C5C5;	
+}
+/*标题*/
+.login-title{
+	padding-bottom: 15px;
+	padding-top: 21px;
+	padding-left: 18px;
+	border-bottom: 1px solid #C5C5C5;
+	font-size: 25px;
+  	font-family: "MicrosoftYaHei";
+  	color: rgb(46, 50, 53);
+  	background: #f8f8f8;
+}
+.login-title span{
+  	font-size: 14px;
+  	font-family: "SimSun";
+  	color: rgb(46, 50, 53);
+  	margin-left: 11px;
+  	margin-right: 16px;
+}
+.login-title span a{
+	font-size: 14px;
+  	font-family: "SimSun";
+  	color: #1978cf;
+}
+/*登录主体*/
+.login-main{
+	overflow: hidden;	
+	padding-left: 50px;
+	background: white;
+	/*height: 286px;*/
+}
+.login-normal{
+	float: left;
+}
+/*普通登录*/
+.login-normal{
+	padding-top: 36px;
+	position: relative;
+}
+.common li{
+	padding-left: 59px;
+	margin-bottom: 15px;
+}
+.common li:nth-child(1){
+	text-align: right;
+	font-size: 12px;
+  	font-family: "SimSun";
+  	color: rgb(25, 120, 207);
+}
+.common li:nth-child(1) span{
+	cursor: pointer;
+}
+/*图标*/
+.common li:nth-child(1) i{
+	width: 10px;
+	height: 14px;
+	display: inline-block;
+	background-image: url(../../img/login/icon1.png);
+	margin-right: 6px;
+}
+/*账号密码标签*/
+.common label{
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	width: 47px;
+	font-size: 14px;
+  	font-family: "Adobe Heiti Std";
+  	color: rgb(53, 53, 53);
+  	text-align: right;
+  	line-height: 1.7;
+}
+/*账号密码输入框*/
+.common .loginInput, .common .loginInput{
+	text-indent: 8px;
+	width: 241px;
+	height: 22px;
+	border: 1px solid #C5C5C5;
+}
+/*忘记密码*/
+.forgetLi{
+	position: relative;
+}
+.login-normal a{
+	font-size: 12px;
+  	font-family: "SimSun";
+  	color: rgb(25, 120, 207);
+	position: absolute;
+	right: -70.953px;
+	top: 30%;
+}
+/*记住账号*/
+.normal-remenber span{
+  	font-size: 12px;
+  	font-family: "SimSun";
+  	color: rgb(122, 124, 129);
+  	margin-right: 23px;
+}
+.normal-remenber span input{
+	margin-right: 7px;
+}
+/*登录按钮*/
+.normal-loginBtn{
+  	width: 74px;
+  	height: 27px;
+  	border-left: 1px solid #95c2ec;
+    border-top: 1px solid #95c2ec;
+    border-bottom: 1px solid #183754;
+    border-right: 1px solid #183754;
+    background: #2870b2;
+    color: white;
+    font-size: 14px;
+}
+/*右边部分*/
+.main-quick{
+	float: right;
+	padding-bottom: 31px;
+	width: 274px;
+	border-left: 1px solid #C5C5C5;
+	padding-top: 23px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	font-size: 14px;
+  	font-family: "SimSun";
+  	color: rgb(46, 50, 53);
+  	overflow: hidden;
+}
+.main-quick li:nth-child(1){
+	margin-bottom: 19px;
+}
+.main-quick li:nth-child(2){
+	margin-bottom: 18px;
+}
+.main-quick li:nth-child(2) a{
+	display: inline-block;
+	width: 103px;
+	height: 30px;
+	border: 1px solid #C5C5C5;
+	background: #e7e7e7;
+	font-size: 14px;
+  	font-family: "SimSun";
+ 	color: rgb(46, 50, 53);
+ 	line-height: 30px;
+ 	text-align: center;
+}
+.main-quick li:nth-child(3){
+	margin-bottom: 14px;
+}
+.main-quick i{
+	width: 21px;
+	display: inline-block;
+	vertical-align: text-bottom;
+	background-image: url(../../img/login/xuebi.png);
+	background-repeat: no-repeat;
+	margin-left: 12px;
+	margin-right: 9px;
+}
+.quick-li{
+	float: left;
+	width: 104px;
+	height: 16px;
+	border: 1px solid #C5C5C5;
+	background: #fafafa;
+	line-height: 16px;
+	border-radius: 4px;
+	font-size: 10px;
+	margin-bottom: 8px;
+	margin-right: 6px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+/*qq*/
+.quick-qq i{
+	height: 16px;
+	background-position:0 -10px;	
+}
+/*支付宝*/
+.quick-aliPay i{
+	height: 21px;
+	background-position: 0 -42px;
+	vertical-align: middle;
+}
+/*新浪微博*/
+.quick-sina i{
+	height: 19px;
+	background-image: url(../../img/login/sina.png);
+}
+/*百度*/
+.quick-baidu i{
+	background-position: 0 -26px;
+	height: 16px;
+}
+/*360*/
+.quick-360 i{
+	background-position: 0 -63px;
+	height: 20px;
+	vertical-align: -5px;
+}
+/*开心网*/
+.quick-happy i{
+	height: 19px;
+	background-position: 0 -83px;
+	vertical-align: middle;
+}
+/*800*/
+.quick-800 i {
+	background-position: 0 -102px;
+	vertical-align: -5px;
+	height: 21px;
+}
+/*手机支付*/
+.quick-phonePay i{
+	background-position: 0 -123px;
+    height: 17px;
+    vertical-align: middle;
+}
+/*手机登录*/
+.login-phoneCode{
+	padding-top: 36px;
+	position: relative;
+	float: left;
+	display: none;
+}
+.login-phoneCode li:nth-child(1) i{
+	background-image: url(../../img/login/user.png);
+	width: 13px;
+	height: 12px;
+}
+.phoneCode-codeLi,.phoneCode-phone{
+	position: relative;
+}
+/*输入框提示*/
+.login-tips{
+	border: 1px solid #d3edfb;
+	background: #ebf7fe;
+	padding: 2px 9px;
+	font-size: 12px;
+  	font-family: "SimSun";
+  	color: rgb(102, 102, 102);
+  	position: absolute;
+	top: 5%;
+}
+.phoneCode-phone .login-tips{
+	right: -220px;
+}
+.phoneCode-codeLi .login-tips{
+	right: -184px;
+}
+.login-tips i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../../img/login/tip.png) no-repeat 100% 100%;
+	margin-right: 3px;
+	vertical-align: middle;
+}
+/*获取动态码*/
+.phoneCode-getCode span{
+	display: inline-block;
+	width: 158px;
+	height: 24px;
+	border: 1px solid #C5C5C5;
+	background: #f2f2f2;
+	cursor: pointer;
+	text-align: center;
+	font-size: 12px;
+  	font-family: "SimSun";
+  	color: rgb(0, 0, 0);
+  	line-height: 24px;
+  	border-radius: 3px;
+}
