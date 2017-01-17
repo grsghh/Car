@@ -1,0 +1,543 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+i,em,cite,var{
+	font-style: normal;
+}
+body,html{
+	width: 100%;
+	height:100%;
+	background: #E9E9E9;
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color: #006CDA;
+}
+li{
+	list-style: none;
+}
+/*2017-01-13 by@bo*/
+.sContent{
+	width: 976px;
+	margin: 0 auto;
+}
+.sDrawMsg{
+	width: 962px;
+	height: 42px;
+	line-height: 42px;
+	border: 1px solid #CFCFCF;
+	margin-top: 12px;
+	padding-left: 14px;
+	background-color: #fff;
+	font-size: 14px;
+}
+.sDrawMsg a{
+	margin-right: 15px;
+}
+.sDrawMsg img{
+	float: right;
+	padding-top: 12px;
+	padding-right: 20px;
+}
+/*导航*/
+.sNavPosition{
+	width: 976px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 12px;
+}
+.sNavPosition em{
+	font-family: "宋体";
+	/*margin: 0 5px;*/
+}
+.sMain{
+	width: 976px;
+	/*overflow: hidden;*/
+}
+/*左边*/
+.lslide{
+	width: 716px;
+	padding-top: 28px;
+	float: left;
+}
+.sCarIntroduce{
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #C5C5C5;
+}
+.sCarIntroduce h4{
+	font: normal normal 28px/40px "微软雅黑";
+    font-weight: bold;
+}
+.sCarIntroduce p{
+	font: normal normal 22px/28px "微软雅黑";
+    color: #777;
+    padding: 0 15px;
+}
+.sCar{
+	padding: 17px 15px 0px;
+	/*overflow: hidden;*/
+}
+.sCarword{
+	width: 214px;
+	float: left;
+	position: relative;
+}
+.sJoinDiv{
+	width: 214px;
+	height: 70px;
+	text-align: center;
+	margin-top: 62px;
+	border-bottom: 1px solid #D0CFCF;
+}
+.sJoinDiv a{
+	display: inline-block;
+	width: 90px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	font: normal normal 20px/40px "微软雅黑";
+    color: #fff;
+    background-color: #1D3E78;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.sBuyOut{
+	width: 214px;
+	height: 124px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.sBuyOut span{
+	display: block;
+	text-align: center;
+	font: normal normal 18px/24px "微软雅黑";
+    color: #3d3c3c;
+    
+}
+.sBuyOut span em{
+	color: #ED0F26;
+}
+.sBuyOut cite{
+	display: block;
+	text-align: center;
+	line-height: 20px;
+	color: #3D3C3C;
+}
+.sPrice{
+	width: 252px;
+	height: 70px;
+	background: url(../../img/LuckDraw/dico_e.png) no-repeat;
+	position: absolute;
+	left: -25px;
+	top: -8px;
+}
+.sPrice em{
+	font: normal normal 30px/70px Arial;
+    color: #e40d1a;
+    padding-left: 17px;
+}
+.sPrice cite{
+	font: normal normal 14px/70px Arial;
+	padding-left: 5px;
+	color: #868484;
+	font-size: 12px;
+}
+.sPrice var{
+	color: #868484;
+	font-size: 12px;
+}
+.sDiscount{
+	width: 50px;
+	height: 26px;
+	background: url(../../img/LuckDraw/duihuakuang.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 21px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	top: 0px;
+	right: 64px;
+	
+}
+.sclear{
+	clear: both;
+}
+.sCarImg{
+	float: right;
+	width: 460px;
+	height:257px;
+}
+.sCarImg img{
+	width: 100%;
+	height: 100%;
+}
+/*底栏*/
+.sBotBar{
+	padding: 0 15px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #F4F4F4;
+	margin-top: 10px;
+}
+.sColect{
+	float: left;
+	color:#333;
+	font-size: 12px;
+	padding-left: 22px;
+	background: url(../../img/LuckDraw/dico_g.png) left center no-repeat;
+}
+.sShare{
+	float: right;
+}
+.sShare>span{
+	float: right;
+	font-size: 12px;
+	color:#333;
+}
+.sShareStyle{
+	float: right;
+	height: 40px;
+}
+.sico{
+	text-align: left;
+	padding-left: 20px;
+	height: 16px;
+	line-height: 16px;
+	background: url(../../img/LuckDraw/jiathis_ico.png) no-repeat left center;
+	cursor: pointer;
+}
+.sico_qzon{
+	background-position: 0px -64px;
+}
+.sico_sina{
+	background-position: 0px -96px;
+}
+.sico_qq{
+	background-position: 0px -2017px;
+}
+.sico_kaixin{
+	background-position: 0px -176px;
+}
+.sico_douban{
+	background-position: 0px -560px;
+}
+.sico_qqwb{
+	background-position: 0px -144px;
+}
+/*本单详情*/
+.cDetail{
+	width: 686px;
+	border: 1px solid #C5C5C5;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	margin-top: 12px;
+	background-color: #fff;
+}
+.cDetail h4{
+	font-size:16px;
+	line-height: 40px;
+	font-family: "微软雅黑";
+}
+.sFind{
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	font-size: 14px;
+}
+.sCarD{
+	width: 100%;
+}
+.sCarT{
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	text-indent: 12px;
+	color: #fff;
+	background-color: #2470B6;
+	font-size: 16px;
+}
+.sCarD p{
+	padding-top:6px;
+	padding-bottom: 6px;
+	line-height: 26px;
+	font-size: 14px;
+}
+.sCarD>span{
+	display: block;
+	line-height: 50px;
+}
+.sPasteImg{
+	width: 580px;
+	height: 324px;
+	text-align: center;
+	line-height: 324px;
+	background-color: #E6E7E7;
+	color: #B9B5B5;
+	margin: 12px auto 30px;
+}
+.sFollow{
+	/*tb*/
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 686px;
+	height: 380px;
+	*display: block;
+	*font-size: 175px;
+	*font-family:Arial;
+}
+.sFollow img{
+	vertical-align: middle;
+}
+.sDrawStep{
+	width: 100%;
+	text-align: center;
+}
+.sShare2{
+	width: 410px;
+	padding-left: 18px;
+	overflow: hidden;
+}
+.sShare_com{
+	width: 186px;
+	float: left;
+	text-align: center;
+}
+.sShare_com:nth-child(even){
+	padding-left: 34px;
+}
+.sShare_com a{
+	line-height: 48px;
+}
+/*感兴趣的团购*/
+.sInteresting{
+	width: 716px;
+	border: 1px solid #DCDCDC;
+	background-color: #fff;
+	margin-top:12px;
+	padding-bottom: 20px;
+}
+.sInteresting h4{
+	font-size: 14px;
+	line-height: 64px;
+	padding-left: 10px;
+}
+.sInteresting ul{
+	width: 100%;
+	overflow: hidden;
+}
+.sInteresting ul li{
+	float:left;
+	width: 168px;
+	padding-left: 9px;
+}
+.sInteresting ul li a{
+	width: 168px;
+	display: block;
+}
+.sInteresting ul li a img{
+	width: 168px;
+}
+.sInteresting ul li p{
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 5px;
+	padding:0 5px;
+}
+.sInteresting ul li span{
+	display: block;
+	/*width: 100%;*/
+	overflow: hidden;
+	padding:0 5px;
+	line-height: 22px;
+}
+.sInteresting ul li span em{
+	float: left;
+	font-size: 12px;
+	color:#9E9C9C;
+}
+.sInteresting ul li span cite{
+	font-size: 18px;
+	float: right;
+	color:red;
+}
+/*车族说*/
+.sCarSpeak{
+	border: 1px solid #C5C5C5;
+	background-color: #fff;
+	margin-top: 12px;
+	margin-bottom: 30px;
+	padding: 0px 15px 15px;
+	overflow: hidden;
+}
+.sCarSpeakT{
+	padding-top: 18px;
+	
+}
+/*左边*/
+.sCarSpeakL{
+	width: 440px;
+	float: left;
+}
+.sCarSpeakL h4{
+	line-height: 32px;
+	font-size: 14px;
+}
+.sCarSpeakL p{
+	font-size: 14px;
+	line-height: 20px;
+}
+.sSpeakShare{
+	font-size: 12px;
+	background-color: #EDEDED;
+	line-height: 32px;
+	
+}
+.sSpeakShare span{
+	padding-left: 10px;
+}
+.sSinaShare{
+	padding-left: 23px;
+	background: url(../../img/LuckDraw/sina.png) left center no-repeat;
+	color: #333;
+}
+.sqqShare{
+	padding-left: 23px;
+	background: url(../../img/LuckDraw/qq.png) left center no-repeat;
+	color: #333;
+	margin-left: 5px;
+}
+.sCarSpeakR{
+	float: left;
+	padding-left: 74px;
+	width: 110px;
+	color: #333;
+}
+.sHeadImg{
+	width: 60px;
+	margin: 16px auto 0px;
+}
+.sName{
+	text-align: center;
+	margin-top: 5px;
+	font-size: 12px;
+}
+.sName a{
+	color: #333;
+}
+.sBtn{
+	text-align: center;
+	font-size: 14px;
+}
+.oneFollow{
+	color: #333;
+	display: block;
+	width: 110px;
+	height: 28px;
+	line-height: 28px;
+	background-color: #F8F8F8;
+	box-shadow: 0px 0px 0px 2px #D9D9D9;
+	margin-top: 16px;
+	margin-bottom: 10px;
+}
+/*右边部分*/
+.rslide{
+	width: 236px;
+	float:right;
+	padding-top: 28px;
+}
+.rslide a{
+	color:#333;
+}
+.downLoad{
+	background-color: #fff;
+	border: 1px solid #DADADA;
+	padding: 0px 15px;
+}
+.downLoad li{
+	overflow: hidden;
+	padding: 20px 0px;
+}
+.downLoad li:nth-child(n+2){
+	border-top: 1px solid #F3F3F3;
+}
+.sLImg{
+	float: left;
+	padding-right: 12px;
+}
+.sRInfo{
+	float: left;
+}
+.sRInfo dt{
+	font-size: 16px;
+	font-weight: bold;
+}
+.sRInfo dd{
+	font-size: 12px;
+}
+.sRInfo dd:nth-child(2){
+	line-height: 28px;
+}
+/*热门专题*/
+.sHot{
+	margin-top: 12px;
+	overflow: hidden;
+	background-color: #fff;
+	border: 1px solid #DADADA;
+	padding-left: 10px;
+}
+.sHot h4{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 27px;
+	padding-top: 10px;
+}
+.sHotCar li{
+	padding: 15px 0px;
+	overflow: hidden;
+}
+.sHotL{
+	float: left;
+	padding-right: 9px;
+}
+.sHot li dl{
+	float: left;
+}
+.sHot li dl dt,dd{
+	line-height: 17px;
+}
+.sHot li dl dt{
+	font-size: 14px;
+}
+.sHot li dl dd{
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
