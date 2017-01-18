@@ -56,6 +56,13 @@ li{
 	width: 976px;
 	/*overflow: hidden;*/
 }
+.sMain>a{
+	display: block;
+	position: fixed;
+	bottom: 100px;
+	left: 50%;
+	margin-left: 500px;
+}
 /*左边*/
 .lslide{
 	width: 716px;
@@ -517,7 +524,14 @@ li{
 .sHot li dl dd{
 	font-size: 12px;
 }
-
+/*jiathis*/
+.sJt{
+	overflow: hidden;
+	margin-top: 10px;
+}
+.sSpeakShare>a{
+	position: relative;
+}
 
 
 

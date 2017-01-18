@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>抽奖页</title>
-		<link rel="stylesheet" type="text/css" href="../../css/common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
 		<link rel="stylesheet" type="text/css" href="../../css/LuckDraw/choujiang.css" />
 	</head>
 
@@ -121,10 +121,10 @@
 			<!--参与抽奖头部消息栏-->
 			<div class="sDrawMsg">
 				您已经参与了本次抽奖活动。
-				<a href="###">查看我的美梦成真</a>
-				<a href="###">查看抽奖结果</a>
+				<a href="wodemeimengchengzhen.html">查看我的美梦成真</a>
+				<a href="yicanyu.html">查看抽奖结果</a>
 				<a href="###">继续邀请</a>
-				<img src="../../img/LuckDraw/X2.png" alt="关闭" />
+				<img src="../../img/LuckDraw/X2.png" alt="关闭" class="shut"/>
 			</div>
 			<!--面包屑导航-->
 			<div class="sNavPosition">
@@ -169,8 +169,8 @@
 						<div class="sBotBar">
 							<a href="javascript:;" class="sColect">收藏笨蛋</a>
 							<div class="sShare">
-
-								<div class="sShareStyle">
+								<!--JiaThis Button BEGIN-->
+								<!--<div class="sShareStyle">
 									<a href="javascript:;" title="分享到新浪微博">
 										<span class="sico sico_sina"></span>
 									</a>
@@ -191,7 +191,24 @@
 										<span class="sico sico_qzon"></span>
 									</a>
 								</div>
-								<span>分享:&nbsp;</span>
+								<span>分享:&nbsp;</span>-->
+								<!-- JiaThis Button BEGIN -->
+								<div class="jiathis_style sJt">
+									<span class="jiathis_txt">分享：</span>
+									<a class="jiathis_button_qzone">QQ空间</a>
+									<a class="jiathis_button_tsina">新浪微博</a>
+									<a class="jiathis_button_tqq">腾讯微博</a>
+									<a class="jiathis_button_weixin">微信</a>
+									<a href="http://www.jiathis.com/share?uid=2124063" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+									<a class="jiathis_counter_style"></a>
+								</div>
+								<script type="text/javascript">
+									var jiathis_config = {
+										data_track_clickback: 'true'
+									};
+								</script>
+								<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2124063" charset="utf-8"></script>
+								<!-- JiaThis Button END -->
 							</div>
 						</div>
 						<!--底栏 e-->
@@ -334,7 +351,38 @@
 							<p>中国古代神话中有'黄帝造车'之说,故黄帝又号轩辕氏.轩是古代一种有困棚的车,辕是车的基本构件,所以车辆应当是黄帝首先发明的.随后,车在我们祖先灵巧的双手和智慧的可拓下,历经各朝各代的精益改良,最终套在马上驶进了历史的舞台.中世纪,欧洲大量地发展了双轴四轮马车,这种马车安置有转向盘,车身方面出现了活动车门和封闭式结构,并且在车身和车轴之间实现了弹簧链接极为舒适.</p>
 							<div class="sSpeakShare">
 								<span>分享:</span>
-								<a href="javascript:;" title="分享到新浪微博" class="sSinaShare">新浪微博</a>
+								<a href="javascript:;" target="ifr" title="分享到新浪微博" class="sSinaShare">新浪微博
+
+								</a>
+
+								<script type="text/javascript" charset="utf-8">
+									(function() {
+										var _w = 86,
+											_h = 40;
+										var param = {
+											url: location.href,
+											type: '6',
+											count: '0',
+											/**是否显示分享数，1显示(可选)*/
+											//												appkey: '4251925793',
+											/**您申请的应用appkey,显示分享来源(可选)*/
+											title: '车族说哈哈哈😁',
+											/**分享的文字内容(可选，默认为所在页面的title)*/
+											pic: '',
+											/**分享图片的路径(可选)*/
+											ralateUid: '',
+											/**关联用户的UID，分享微博会@该用户(可选)*/
+											language: 'zh_cn',
+											/**设置语言，zh_cn|zh_tw(可选)*/
+											dpc: 1
+										}
+										var temp = [];
+										for(var p in param) {
+											temp.push(p + '=' + encodeURIComponent(param[p] || ''))
+										}
+										document.write('<iframe name="ifr" allowTransparency="true" frameborder="0" scrolling="no" src="http://service.weibo.com/staticjs/weiboshare.html?' + temp.join('&') + '" width="' + _w + '" height="' + _h + '" style="height:18px;position:relative;top:6px;left:-73px;opacity:0"></iframe>')
+									})()
+								</script>
 								<a href="javascript:;" title="分享到腾讯新闻" class="sqqShare">腾讯微博</a>
 							</div>
 							<div class="carBg">
@@ -344,14 +392,14 @@
 						<!--右边-->
 						<div class="sCarSpeakR">
 							<div class="sHeadImg">
-								<a href="###"><img src="../../img/LuckDraw/choujiang3.png" /></a>
+								<a href="http://weibo.com/icarzoo" target="_blank"><img src="../../img/LuckDraw/choujiang3.png" /></a>
 							</div>
 							<div class="sName">
-								<a href="###">车族说</a>
+								<a href="http://weibo.com/icarzoo" target="_blank">车族说</a>
 							</div>
 							<div class="sBtn">
-								<a href="###" class="oneFollow"><em>一键关注</em></a>
-								<a href="###" class="sReg">注册微博</a>
+								<a href="###" class="oneFollow" onclick="window.open('http://weibo.com/a/unlogin/loginmini?lang=zh-cn&amp;url=http%3A%2F%2Fwidget.weibo.com%2Fevent%2Fjump.html', 'weibo_login', 'width=950, height=640, toolbar=yes, menubar=no, resizable=yes, location=no, status=no');"><em>一键关注</em></a>
+								<a href="http://weibo.com/signup/signup.php?from=zw&amp;appsrc=Ahn0k&amp;backurl=http%3A%2F%2Fweibo.com&amp;vsrc=app_bulkfollow&amp;showlogo=0&amp;invitecode=2158028227" user_count="widget_bulkfollow_reg" suda-uatrack="key=weibo_bulkfollow_widget&amp;value=widget_bulkfollow_reg" target="_blank" class="sReg" >注册微博</a>
 							</div>
 						</div>
 					</div>
@@ -372,7 +420,7 @@
 									<a href="###">更多</a>
 								</dd>
 								<dd>
-									<a href="###"><img src="img/btn1.jpg" /></a>
+									<a href="###"><img src="../../img/LuckDraw/btn1.jpg" /></a>
 								</dd>
 							</dl>
 						</li>
@@ -387,7 +435,7 @@
 									<a href="###">Android</a>
 								</dd>
 								<dd>
-									<a href="###"><img src="img/btn2.jpg" /></a>
+									<a href="###"><img src="../../img/LuckDraw/btn2.jpg" /></a>
 								</dd>
 							</dl>
 						</li>
@@ -455,6 +503,8 @@
 				</div>
 				<!--清除父级塌陷-->
 				<div class="sclear"></div>
+				<!--会到吧顶部-->
+				<a href="#" class="sReTop"><img src="../../img/LuckDraw/returnTop.png" alt="顶部" /></a>
 			</div>
 			<!--主体部分 e-->
 
@@ -468,28 +518,48 @@
 					<!--帮助中心-->
 					<dl class="rWebInfo-help">
 						<dt>帮助中心</dt>
-						<dd><a href="###">◇ 购买流程</a></dd>
-						<dd><a href="###">◇ 找回密码</a></dd>
+						<dd>
+							<a href="###">◇ 购买流程</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 找回密码</a>
+						</dd>
 					</dl>
 					<!--微博-->
 					<dl class="rWebInfo-weibo">
 						<dt>官方微博</dt>
-						<dd><a href="###">◇ 新浪微博</a></dd>
-						<dd><a href="###">◇ 腾讯微博</a></dd>
+						<dd>
+							<a href="###">◇ 新浪微博</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 腾讯微博</a>
+						</dd>
 					</dl>
 					<!--商务合作-->
 					<dl class="rWebInfo-coop">
 						<dt>商务合作</dt>
-						<dd><a href="###">◇ 商户登录</a></dd>
-						<dd><a href="###">◇ 业务合作</a></dd>
-						<dd><a href="###">◇ 开放API</a></dd>
+						<dd>
+							<a href="###">◇ 商户登录</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 业务合作</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 开放API</a>
+						</dd>
 					</dl>
 					<!--关于我们-->
 					<dl class="rWebInfo-aboutUs">
 						<dt>关于我们</dt>
-						<dd><a href="###">◇ 公司简介</a></dd>
-						<dd><a href="###">◇ 联系我们</a></dd>
-						<dd><a href="###">◇ 加入我们</a></dd>
+						<dd>
+							<a href="###">◇ 公司简介</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 联系我们</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 加入我们</a>
+						</dd>
 					</dl>
 					<div class="rWebInfo-contact">
 						<i>客服电话（免长途费）</i>
@@ -499,21 +569,21 @@
 				</div>
 				<!--网站备案信息-->
 				<div class="rwebRecode">
-					<p>京ICP证110457号   京ICP备11014893号   北京双立人网络科技有限公司   版权所有 Copyright © 2011    iCarZoo.COM    All Rights Reserved</p>
+					<p>京ICP证110457号 京ICP备11014893号 北京双立人网络科技有限公司 版权所有 Copyright © 2011 iCarZoo.COM All Rights Reserved</p>
 				</div>
 				<!--网站备案图片-->
 				<div class="rwebRecodeImg">
 					<a href="###">
-						<img src="../../img/common/web1.png"/>
+						<img src="../../img/common/web1.png" />
 					</a>
 					<a href="###">
-						<img src="../../img/common/web2.png"/>
+						<img src="../../img/common/web2.png" />
 					</a>
 					<a href="###">
-						<img src="../../img/common/web3.png"/>
+						<img src="../../img/common/web3.png" />
 					</a>
 					<a href="###">
-						<img src="../../img/common/web4.png"/>
+						<img src="../../img/common/web4.png" />
 					</a>
 				</div>
 				<!--友情链接-->
@@ -536,5 +606,8 @@
 		</div>
 		<!--底部公共样式 e-->
 	</body>
+	<script type="text/javascript" src="../../js/common/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../../js/LuckDraw/choujiang.js"></script>
+	<script type="text/javascript" src="../../js/common/common.js"></script>
 
 </html>
