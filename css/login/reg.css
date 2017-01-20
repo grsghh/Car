@@ -1,5 +1,56 @@
+body{
+	position: relative;
+}
+/*遮罩层*/
+.mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(232,232,232,0.4);
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	display: none;
+}
+.alert{
+	width: 250px;
+	height: 100px;
+	position: absolute;
+	top: 25%;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	z-index: 3;
+	background: white;
+	border: 1px solid rgb(197,197,197);
+	text-align: center;
+	line-height: 2.3;
+	display: none;
+}
+.alert-msg{
+	font-size: 23px;
+}
+.alert>li:nth-child(3){
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.alert-copy{
+	cursor: pointer;
+	border: none;
+	background: white;
+	color: rgb(25,120,207);
+	display: none;
+}
+.alert-close a{
+	display: inline-block;
+    width: 22%;
+    color: white;
+    background: rgb(33,63,123);
+    font-size: 13px;
+}
 .content{
 	padding-top: 20px;
+	padding-bottom: 38px;
 	background: rgb(232,232,232);
 }
 /*注册区域头部*/
@@ -23,6 +74,7 @@
 	border-top-left-radius: 5px;
 	overflow: hidden;
 	line-height: 36px;
+	cursor: pointer;
 }
 .tabs-mail i{
 	display: inline-block;
@@ -79,7 +131,6 @@
 /*注册主体*/
 .regMain{
 	padding: 32px 35px 30px 35px;
-	height: 524px;
 	box-sizing: border-box;
 	border: 1px solid rgb(197,197,197);
 	background: white;
@@ -106,12 +157,13 @@
 	border: 1px solid rgb(197,197,197);
 	width: 285px;
 	height: 22px;
+	text-indent: 10px;
 }
-.regMain-dd span{
+.regMain-tips{
 	display: inline-block;
 	border: 1px solid #d3edfb;
 	background: #ebf7fe;
-	padding: 3px 9px;
+	padding: 2px 9px;
 	font-size: 12px;
   	font-family: "SimSun";
   	color: rgb(102, 102, 102);
@@ -120,10 +172,220 @@
 	display: inline-block;
 	width: 16px;
 	height: 16px;
-	background: url(../../img/login/tip.png);
+	background: url(../../img/login/tip.png) no-repeat 100% 100%;
 	margin-right: 3px;
 	vertical-align: middle;
 }
 .regMain-tips a{
 	color: rgb(25,120,207);
+}
+
+/*所在城市*/
+.regCity {
+	position: relative;
+	padding: 10px 0px 9px 16px;
+}
+.regCity dt{
+	position: absolute;
+	width: 61px;
+	text-align: right;
+	line-height: 1.8;
+	font-size: 14px;
+  	font-family: "Adobe Heiti Std";
+  	color: rgb(53, 53, 53);
+}
+.regCity dd{
+	padding-left: 73px;
+	font-size: 12px;
+  	font-family: "Adobe Heiti Std";
+  	
+}
+/*清除select默认样式*/
+.regCity select{
+	border: 1px solid #c5c5c5;
+	appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    padding-right: 14px;
+    background: url(../../img/login/arrow.png) no-repeat scroll right center transparent;
+    border-radius: 0px;
+    width: 70px;
+    height: 20px;
+    padding-left: 19px;
+}
+.regCity select option{
+	text-align: right;
+	direction: rtl;
+}
+/*清除ie下默认下拉三角*/
+select::-ms-expand { display: none; }
+
+/*订购dd*/
+.regCity-order{
+	margin-top: 22px;
+}
+/*订阅选框*/
+.isOrder{
+	margin-right: 7px;
+	margin-bottom: 9px;
+}
+.regCity-order span:nth-of-type(2){
+	color: #989898;
+	padding-left: 22px;
+}
+/*验证码*/
+.regCode{
+	position: relative;
+	padding: 10px 0px 9px 16px;
+}
+.regCode dt{
+	position: absolute;
+	width: 61px;
+	text-align: right;
+	line-height: 1.8;
+	font-size: 14px;
+  	font-family: "Adobe Heiti Std";
+  	color: rgb(53, 53, 53);
+}
+.regCode dd{
+	padding-left: 73px;
+	font-size: 12px;
+  	font-family: "Adobe Heiti Std";
+}
+.regCode dd img{
+	vertical-align: middle;
+	margin-left: 14px;
+	margin-right: 13px;
+}
+.regCode a{
+	margin-right: 7px;
+}
+.regCode a:hover{
+	text-decoration: underline;	
+}
+.regCode-input{
+	border: 1px solid rgb(197,197,197);
+	width: 116px;
+	height: 22px;
+	text-indent: 10px;
+}
+/*确认按钮div*/
+.regSubmit{
+	margin-top: 25px;
+	padding-left: 92px;
+}
+.regSubmit-btn{
+	border-left: 1px solid #95c2ec;
+	border-top: 1px solid #95c2ec;
+	border-bottom: 1px solid #183754;
+	border-right: 1px solid #183754;
+	background: #2870b2;
+	display: block;
+  	width: 145px;
+  	height: 23px;
+ 	font-size: 14px;
+  	font-family: "SimSun";
+  	color: rgb(255, 255, 255);
+  	margin-bottom: 10px;
+}
+.regSubmit a{
+  	font-size: 12px;
+  	font-family: "SimSun";
+  	color: rgb(40, 112, 178);
+}
+.regMain-Mail{
+	display: block;
+}
+.regMain-Phone{
+	display: none;
+}
+.regMain-Phone dt{
+	width: 74px;
+}
+.regMain-Phone .regMain-dd{
+	padding-left: 85px;
+}
+.getCode{
+	margin-top: 8px;
+}
+.getCode button{
+	width: 160px;
+	height: 26px;
+	border: 1px solid #c8c8c8;
+	background: #f3f3f3;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.regMain-Phone .regSubmit{
+	padding-left: 100px;
+}
+.carDl input{
+	width: auto;
+	margin-right: 6px;
+	vertical-align: middle;
+}
+.carDl i{
+	font-size: 12px;
+  	font-family: "SimSun";
+  	margin-right: 20px;
+  	color: rgb(94, 104, 113);
+}
+/*注册成功页*/
+.regSuccess{
+	width: 317px;
+	height: 165px;
+	margin: 35px auto 100px auto;
+	display: none;
+}
+.regSuccess-title{
+	margin-bottom: 13px;
+}
+.regSuccess-title i{
+	display: inline-block;
+	width: 49px;
+	height: 49px;
+	background: url(../../img/login/tip3.png) no-repeat;
+	margin-right: 14px;
+	vertical-align: -14px;
+}
+.regSuccess-title span{
+  	font-size: 25px;
+  	font-family: "MicrosoftYaHei";
+  	color: rgb(46, 50, 53);
+}
+.regSuccess-phone{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.regSuccess-info{
+	padding-left: 14px;
+	overflow: hidden;
+}
+.regSuccess-info span{
+	font-size: 14px;
+  	font-family: "SimSun";
+  	color: rgb(53, 53, 53);
+}
+.regSuccess-info a{
+	color: #1978cf;
+	font-size: 14px;
+	float: right;
+}
+.regSuccess-back{
+	text-align: center;
+	margin-top: 38px;
+}
+.regSuccess-back a{
+	border-left: 1px solid #95c2ec;
+	border-top: 1px solid #95c2ec;
+	border-bottom: 1px solid #183754;
+	border-right: 1px solid #183754;
+	background: #2870b2;
+	display: inline-block;
+  	width: 105px;
+  	height: 25px;
+ 	font-size: 12px;
+  	font-family: "SimSun";
+  	color: rgb(255, 255, 255);
+  	line-height: 25px;
 }

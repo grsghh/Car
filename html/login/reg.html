@@ -6,6 +6,7 @@
 		<title>注册</title>
 		<link rel="stylesheet" href="../../css/common/common.css" />
 		<link rel="stylesheet" type="text/css" href="../../css/login/reg.css" />
+		<script src="../../js/common/clipboard.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -113,6 +114,15 @@
 				</ul>
 			</div>
 		</div>
+		<!--遮罩-->
+		<div class="mask"></div>
+		<ul class="alert">
+			<li class="alert-msg">111</li>
+			<li class="alert-close">
+				<a href="###">关闭</a>
+			</li>
+			<li><button class="alert-copy" data-clipboard-action="copy" data-clipboard-target=".alert-msg">复制验证码</button></li>
+		</ul>
 		<!--主体-->
 		<div class="content">
 			<div class="rContainer">
@@ -136,50 +146,207 @@
 				</div>
 				<!--注册区-->
 				<div class="regMain">
-					<!--邮箱-->
-					<dl class="regMain-dl">
-						<dt>邮箱:</dt>
-						<dd class="regMain-dd eMail">
-							<input type="text" />
-							<span class="regMain-tips">
+					<!--邮箱注册-->
+					<div class="regMain-Mail">
+						<!--邮箱-->
+						<dl class="regMain-dl">
+							<dt>邮箱:</dt>
+							<dd class="regMain-dd eMail">
+								<input type="text" />
+								<span class="regMain-tips">
 								<i></i>
 								<em>
-									推荐：						
+									推荐：
+									<a href="###">qq邮箱</a>
 								</em>
-								<a href="###">qq邮箱</a>
+								
 							</span>
-						</dd>
-					</dl>
-					<!--用户名-->
-					<dl class="regMain-dl">
-						<dt>用户名:</dt>
-						<dd class="regMain-dd userName">
-							<input type="text" />
-							<span class="regMain-tips">
+							</dd>
+						</dl>
+						<!--用户名-->
+						<dl class="regMain-dl">
+							<dt>用户名:</dt>
+							<dd class="regMain-dd userName">
+								<input type="text" />
+								<span class="regMain-tips">
 								<i></i>
 								<em>
 									4-16字符，不能以数字开头，一个汉字为两个字符						
 								</em>
 							</span>
-						</dd>
-					</dl>
-					<!--创建密码-->
-					<dl class="regMain-dl">
-						<dt>创建密码:</dt>
-						<dd class="regMain-dd passWord">
-							<input type="text" />
-							<span class="regMain-tips">
+							</dd>
+						</dl>
+						<!--创建密码-->
+						<dl class="regMain-dl">
+							<dt>创建密码:</dt>
+							<dd class="regMain-dd passWord">
+								<input type="password" />
+								<span class="regMain-tips">
 								<i></i>
 								<em>
 									6-32字符，可使用字母、数字及符号的任意组合					
 								</em>
 							</span>
-						</dd>
-					</dl>
+							</dd>
+						</dl>
+						<!--确认密码-->
+						<dl class="regMain-dl">
+							<dt>确认密码:</dt>
+							<dd class="regMain-dd ispassWord">
+								<input type="password" />
+								<span class="regMain-tips">
+								<i></i>
+								<em>
+									请再次输入密码					
+								</em>
+							</span>
+							</dd>
+						</dl>
+						<!--所在城市-->
+						<dl class="regCity">
+							<dt>所在城市:</dt>
+							<dd>
+								<!--省-->
+								<select name="provinces" class="provinces">
+									<option value="">北京</option>
+								</select>
+								<!--市-->
+								<select name="citys">
+									<option value="">东城区</option>
+								</select>
+							</dd>
+							<dd class="regCity-order">
+								<input type="checkbox" class="isOrder" />
+								<span>订阅每日最新团购信息</span>
+								<br />
+								<span>订阅后将收到每日团购信息邮件（可随时退订）</span>
+							</dd>
+						</dl>
+						<!--验证码-->
+						<dl class="regCode">
+							<dt>验证码:</dt>
+							<dd>
+								<input type="text" class="regCode-input" />
+								<img src="../../img/login/iscode.png" class="regCode-img" />
+								<a href="###" class="regCode-change">看不清楚？换一张</a>
+								<span class="regMain-tips">
+								<i></i>
+								<em>
+									请输入图片中的字符，不区分大小写				
+								</em>
+							</span>
+							</dd>
+						</dl>
+						<!--确认按钮-->
+						<div class="regSubmit">
+							<button class="regSubmit-btn">同意以下协议并注册</button>
+							<a href="###">《车族网用户协议》</a>
+						</div>
+					</div>
+					<!--手机注册-->
+					<div class="regMain-Phone">
+						<!--手机号-->
+						<dl class="regMain-dl">
+							<dt>手机号:</dt>
+							<dd class="regMain-dd phone">
+								<input type="text" />
+								<span class="regMain-tips">
+								<i></i>
+								<em>
+									用于登录和找回密码，不会公开
+								</em>								
+								</span>
+							</dd>
+							<!--发送验证码-->
+							<dd class="regMain-dd getCode">
+								<button>免费获取短信验证码</button>
+							</dd>
+						</dl>
+						<!--短信验证码-->
+						<dl class="regMain-dl">
+							<dt>短信验证码:</dt>
+							<dd class="regMain-dd isCode">
+								<input type="text" />
+								<span class="regMain-tips">
+								<i></i>
+								<em>
+									请输入收到的手机验证码
+								</em>
+							</span>
+							</dd>
+						</dl>
+						<!--创建密码-->
+						<dl class="regMain-dl">
+							<dt>创建密码:</dt>
+							<dd class="regMain-dd passWord">
+								<input type="password" />
+								<span class="regMain-tips">
+								<i></i>
+								<em>
+									6-32字符，可使用字母、数字及符号的任意组合					
+								</em>
+							</span>
+							</dd>
+						</dl>
+						<!--确认密码-->
+						<dl class="regMain-dl">
+							<dt>确认密码:</dt>
+							<dd class="regMain-dd ispassWord">
+								<input type="password" />
+								<span class="regMain-tips">
+								<i></i>
+								<em>
+									请再次输入密码					
+								</em>
+							</span>
+							</dd>
+						</dl>						
+						<!--是否有车-->
+						<dl class="regMain-dl carDl">
+							<dt>是否有车:</dt>
+							<dd class="regMain-dd">
+								<input type="radio" class="hasCar" name="car" checked/>
+								<i>有车</i>
+								<input type="radio" class="noCar" name="car"/>
+								<i>无车</i>
+							</dd>
+						</dl>
+						<!--是否需购车-->
+						<dl class="regMain-dl carDl">
+							<dt>是否有车:</dt>
+							<dd class="regMain-dd">
+								<input type="radio" class="needCar" name="car2" checked/>
+								<i>所购车需求</i>
+								<input type="radio" class="noNeedCar" name="car2" />
+								<i>无购车需求</i>
+							</dd>
+						</dl>
+						<!--确认按钮-->
+						<div class="regSubmit">
+							<button class="regSubmit-btn">同意以下协议并注册</button>
+							<a href="###">《车族网用户协议》</a>
+						</div>
+						
+					</div>
+					<!--注册成功页-->
+					<ul class="regSuccess">
+						<li class="regSuccess-title">
+							<i></i>
+							<span>注册成功</span>
+						</li>
+						<li class="regSuccess-info">
+							<span class="regSuccess-phone">您所绑定的手机号: 18538524945</span>
+							<br>
+							<span class="regSuccess-userName">系统生成的用户名: OKEI123</span>
+							<a href="../login/personal.html">去个人中心修改</a>
+						</li>
+						<li class="regSuccess-back">
+							<a href="../Homepage/homepage.html">返回首页</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-
 		<!--底部公共样式-->
 		<div class="rFooter">
 			<div class="rContainer">
@@ -276,6 +443,6 @@
 		</div>
 	</body>
 	<script src="../../js/common/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../js/login/login.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/login/reg.js" type="text/javascript" charset="utf-8"></script>
 
 </html>

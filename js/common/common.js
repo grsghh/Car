@@ -1,0 +1,23 @@
+//返回顶部
+$(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 200){
+			$('.sReTop').slideDown(200);
+		}else{
+			$('.sReTop').slideUp(200);
+		}
+	})
+})
+$(function(){
+	$('img').mouseenter(function(){
+		$(this).parent().css({
+			'overflow':'hidden',
+			'borderRadius':'5px'
+		});
+		$(this).css('transform','scale(1.1,1.1)');
+	}).mouseleave(function(){
+		$(this).css({
+			"transform":'scale(1,1)'
+		})
+	})
+})

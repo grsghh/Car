@@ -161,7 +161,7 @@ em,i{
 .rSerach-workTime{
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: 5px;
 	height: 40px;
 }
 .rSerach-workTime div:nth-child(1){
