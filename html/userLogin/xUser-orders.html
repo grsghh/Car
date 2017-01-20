@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>车族网</title>
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/userLogin/xUser-orders.css"/>
+	</head>
+
+	<body>
+		<!--主体宽976-->
+		<!--顶部小按钮-->
+		<div class="rTopBar">
+			<div class="rContainer">
+				<!--收藏夹nav-->
+				<div class="rTopBar-info">
+					<img src="../../img/common/iLike.png" />
+					<span>收藏夹</span>
+					<img src="../../img/common/iOrder.png" />
+					<span>订阅</span>
+					<img src="../../img/common/iHelp.png" />
+					<span>帮助</span>
+				</div>
+			</div>
+		</div>
+		<!--搜索栏-->
+		<div class="rSerach xChange">
+			<div class="rContainer">
+				<!--左边内容-->
+				<div class="rSerach-left">
+					<img src="../../img/common/logo.png" / clang="logo">
+					<!--城市切换-->
+					<span class="rChangeCity">
+						<i class="rChangeCity-txt">北京</i>
+						<br />
+						<em class="rChangeCity-switch">[切换城市]</em>
+					</span>
+				</div>
+				<!--右边400-->
+				<div class="rSerach-workTime">
+					<div>4006-630-636</div>
+					<div>每日9:00-21:00</div>
+				</div>
+			</div>
+		</div>
+		<!--导航栏-->
+
+		<div class="rNav">
+			<div class="rContainer">
+				<!--左边页面跳转-->
+				<ul class="rNav-left">
+					<li>
+						<a href="../home/home.html">订单管理</a>
+					</li>
+					<li>
+						<a href="../home/home.html">财务管理</a>
+					</li>
+					<li>
+						<a href="../home/home.html">本店服务</a>
+					</li>
+					<li>
+						<a href="../home/home.html">本店团购</a>
+					</li>
+					<li>
+						<a href="../home/home.html">管理我的店</a>
+					</li>
+				</ul>
+				<!--右边个人部分-->
+				<ul class="rNav-right">
+					<li>
+						<a href="#">爱义行</a>
+						<img src="../../img/userLogin/userOrders1.png" alt="" />
+					</li>
+					<li>
+						<a href="../login/login.html">登录</a>
+					</li>
+					<li>
+						<a href="../login/reg.html">注册</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--内容-->
+		<div class="xWrap">
+			<div class="xContent">
+				<div>商户订单管理</div>
+				<ul>
+					<li>
+						<img src="../../img/userLogin/userOrders03.png"/>
+						<span>退出商家管理系统</span>
+					</li>
+					<li>
+						<img src="../../img/userLogin/userOrders03.png"/>
+						<span>已付款订单</span>
+					</li>
+					<li>
+						<img src="../../img/userLogin/userOrders02.png"/>
+						<span>已结算订单</span>
+					</li>
+				</ul>
+				<!--查询框-->
+				<div class="query-user">
+					<img src="../../img/userLogin/userOrders04.png" alt="" />
+					订单号 <input type="text" />
+					消费码 <input type="text" />
+					验证码 <input type="text" class="judge-code"/>
+					<em></em>
+					<span>点击刷新</span>
+					<button>查询订单</button>
+				</div>
+				<div class="user-list">
+					<div>
+					<table border="1px" bordercolor="white" cellspacing="0" cellpadding="6px">
+						<tr>
+							<th>团购项目</th>
+							<th>消费店</th>
+							<th>订单号</th>
+							<th>数量</th>
+							<th>总价</th>
+							<th>订单状态</th>
+							<th>消费时间</th>
+							<th>配送详情</th>
+							<th>操作</th>
+						</tr>
+						<tr>
+							<td>朝阳区】车族网仅需99元，即可享原价1680元的卡尔捷德汽车服务汽车美鹰镀膜一次，附赠全车28项安全检查、抛光、精洗、轮胎养护一次、VIP积分卡一张（绝无隐形消费）！赶快为您的贴身爱车做个美容SPA吧，让它为您增光添彩、魅力无限！</td>
+							<td align="center">北京卡尔捷德汽车
+服务有限公司</td>
+							<td align="center">1444114216105</td>
+							<td align="center">6</td>
+							<td align="center">1089元</td>
+							<td align="center">已结算</td>
+							<td align="center">2015-7-22</td>
+							<td align="center">消费券</td>
+							<td align="center">
+								<i>结算</i><br />
+								<em>未结算</em>
+							</td>
+						</tr>
+						<tr>
+							<td>朝阳区】车族网仅需99元，即可享原价1680元的卡尔捷德汽车服务汽车美鹰镀膜一次，赶快为您的贴身爱车做个美容SPA吧！</td>
+							<td align="center">北京卡尔捷德汽车
+服务有限公司</td>
+							<td align="center">1444114216105</td>
+							<td align="center">6</td>
+							<td align="center">1089元</td>
+							<td align="center">已结算</td>
+							<td align="center">2015-7-22</td>
+							<td align="center">消费券</td>
+							<td align="center">
+								<i>结算</i><br />
+								<em>未结算</em>
+							</td>
+						</tr>
+						<tr>
+							<td>朝阳区】车族网仅需99元，即可享原价1680元的卡尔捷德汽车服务汽车美鹰镀膜一次，附赠全车28项安全检查、抛光、精洗、轮胎养护一次、VIP积分卡一张（绝无隐形消费）！赶快为您的贴身爱车做个美容SPA吧，让它为您增光添彩、魅力无限！</td>
+							<td align="center">北京卡尔捷德汽车
+服务有限公司</td>
+							<td align="center">1444114216105</td>
+							<td align="center">6</td>
+							<td align="center">1089元</td>
+							<td align="center">已结算</td>
+							<td align="center">2015-7-22</td>
+							<td align="center">消费券</td>
+							<td align="center">
+								<i>结算</i><br />
+								<em>未结算</em>
+							</td>
+						</tr>
+						<tr>
+							<td>朝阳区】车族网仅需99元，即可享原价1680元的卡尔捷德汽车服务汽车美鹰镀膜一次，附赠全车28项安全检查、抛光、精洗、轮胎养护一次、VIP积分卡一张（绝无隐形消费）！赶快为您的贴身爱车做个美容SPA吧，让它为您增光添彩、魅力无限！</td>
+							<td align="center">北京卡尔捷德汽车
+服务有限公司</td>
+							<td align="center">1444114216105</td>
+							<td align="center">6</td>
+							<td align="center">1089元</td>
+							<td align="center">已结算</td>
+							<td align="center">2015-7-22</td>
+							<td align="center">消费券</td>
+							<td align="center">
+								<i>结算</i><br />
+								<em>未结算</em>
+							</td>
+						</tr>
+						<tr>
+							<td>赶快为您的贴身爱车做个美容SPA吧，让它为您增光添彩、魅力无限！</td>
+							<td align="center">北京卡尔捷德汽车
+服务有限公司</td>
+							<td align="center">1444114216105</td>
+							<td align="center">6</td>
+							<td align="center">1089元</td>
+							<td align="center">已结算</td>
+							<td align="center">2015-7-22</td>
+							<td align="center">消费券</td>
+							<td align="center">
+								<i>结算</i><br />
+								<em>未结算</em>
+							</td>
+						</tr>
+						<tr>
+							<td>朝阳区】车族网仅需99元，即可享原价1680元的卡尔捷德汽车服务汽车美鹰镀膜一次,赶快为您的贴身爱车做个美容SPA吧，让它为您增光添彩、魅力无限！</td>
+							<td align="center">北京卡尔捷德汽车
+服务有限公司</td>
+							<td align="center">1444114216105</td>
+							<td align="center">6</td>
+							<td align="center">1089元</td>
+							<td align="center">已结算</td>
+							<td align="center">2015-7-22</td>
+							<td align="center">消费券</td>
+							<td align="center">
+								<i>结算</i><br />
+								<em>未结算</em>
+							</td>
+						</tr>
+					</table>
+					</div>
+					<!--分页-->
+					<div class="xPaging">
+						<button>
+							<i></i>
+							上一页
+						</button>
+						<button>
+							<i></i>
+							下一页
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部公共样式-->
+		<div class="rFooter">
+			<div class="rContainer">
+				<!--网站信息-->
+				<div class="rWebInfo">
+					<!--帮助中心-->
+					<dl class="rWebInfo-help">
+						<dt>帮助中心</dt>
+						<dd><a href="###">◇ 购买流程</a></dd>
+						<dd><a href="###">◇ 找回密码</a></dd>
+					</dl>
+					<!--微博-->
+					<dl class="rWebInfo-weibo">
+						<dt>官方微博</dt>
+						<dd><a href="###">◇ 新浪微博</a></dd>
+						<dd><a href="###">◇ 腾讯微博</a></dd>
+					</dl>
+					<!--商务合作-->
+					<dl class="rWebInfo-coop">
+						<dt>商务合作</dt>
+						<dd><a href="###">◇ 商户登录</a></dd>
+						<dd><a href="###">◇ 业务合作</a></dd>
+						<dd><a href="###">◇ 开放API</a></dd>
+					</dl>
+					<!--关于我们-->
+					<dl class="rWebInfo-aboutUs">
+						<dt>关于我们</dt>
+						<dd><a href="###">◇ 公司简介</a></dd>
+						<dd><a href="###">◇ 联系我们</a></dd>
+						<dd><a href="###">◇ 加入我们</a></dd>
+					</dl>
+					<div class="rWebInfo-contact">
+						<i>客服电话（免长途费）</i>
+						<br />
+						<strong>4006-630-636</strong>
+					</div>
+				</div>
+				<!--网站备案信息-->
+				<div class="rwebRecode">
+					<p>京ICP证110457号   京ICP备11014893号   北京双立人网络科技有限公司   版权所有 Copyright © 2011    iCarZoo.COM    All Rights Reserved</p>
+				</div>
+				<!--网站备案图片-->
+				<div class="rwebRecodeImg">
+					<a href="###">
+						<img src="../../img/common/web1.png"/>
+					</a>
+					<a href="###">
+						<img src="../../img/common/web2.png"/>
+					</a>
+					<a href="###">
+						<img src="../../img/common/web3.png"/>
+					</a>
+					<a href="###">
+						<img src="../../img/common/web4.png"/>
+					</a>
+				</div>
+				<!--友情链接-->
+				<div class="rFriend">
+					<a href="###">腾讯汽车</a>
+					<a href="###">凤凰网汽车</a>
+					<a href="###">MSN汽车</a>
+					<a href="###">北京团购网</a>
+					<a href="###">360网址导航</a>
+					<a href="###">北京团购网</a>
+					<a href="###">北京团购</a>
+					<a href="###">金山网址导航</a>
+					<a href="###">特米购物</a>
+					<a href="###">团购网站大全</a>
+					<a href="###">114网址导航</a>
+					<a href="###">114啦网址导航</a>
+					<a href="###">团购大全</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="../../js/userLogin/xUser-orders.js"></script>
+</html>
