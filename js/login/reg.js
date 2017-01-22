@@ -86,11 +86,12 @@ $(".regMain-Phone .passWord input").blur(function() {
 		}
 	})
 	//密码二次验证
-$(".regMain-Phone .regMain-Mail .ispassWord input").blur(function() {
+$(".regMain-Phone .ispassWord input").blur(function() {
 		testReg($(this), $(this).val(), "请输入密码", "两次密码不同");
 		if (tipTrue($(this))) {
 			phoneFlag ++;
 		}
+		
 	})
 //复制按钮
 $(".alert-copy").click(function(){
@@ -212,14 +213,18 @@ function regSub(val) {
 			$(".regSuccess").show();
 			$(".regMain-Phone").hide();
 			$(".regSuccess-phone").text("您所绑定的手机号: " + val);
-			$(".regSuccess-userName").text("系统生成的用户名: " + randomUser());
+			var rN = randomUser();
+			$(".regSuccess-userName").text("系统生成的用户名: " + rN);
+			localStorage.userName = rN;
 		} else {
 			var val = $(".regMain-Mail .eMail input").val();
 			$(".regHead").hide();
 			$(".regSuccess").show();
 			$(".regMain-Mail").hide();
 			$(".regSuccess-phone").text("您所绑定的邮箱: " + val);
-			$(".regSuccess-userName").text("系统生成的用户名: " + randomUser());
+			var rN = randomUser();
+			$(".regSuccess-userName").text("用户名为: " + rN);
+			localStorage.userName = rN;
 		}
 	} else {
 		maskAlert("show", "信息填写不完整");

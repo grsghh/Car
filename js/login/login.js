@@ -7,6 +7,9 @@ $(".login-toNormal").click(function(){
 	$(".login-normal").toggle();
 	$(".login-phoneCode").toggle();
 });
+$(".normal-loginBtn").click(function(){
+	window.location.href = "personal.html";
+})
 //验证输入框 
 function testReg(target, reg, emptyTxt, regTxt) {
 	//判断输入框值是否为空

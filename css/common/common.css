@@ -109,6 +109,7 @@ em,i{
     font-size: 14px;
     border: 1px solid rgb(33,63,123);
 	display: none;
+	z-index: 999;
 }
 .rChangeCity-provinces,.rChangeCity-citys{
 	padding: 0 3px;
@@ -118,10 +119,6 @@ em,i{
 	margin: 0 8px;
 	cursor: pointer;
 }
-/*.rChangeCity-provinces span:hover{
-	background: rgb(33,63,123);
-	color: white;	
-}*/
 /*蓝色分隔条*/
 .rChangeCity-line{
 	background: rgb(33,63,123);
