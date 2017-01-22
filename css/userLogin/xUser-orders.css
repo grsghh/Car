@@ -149,3 +149,9 @@
 	background: white;
 	color: #235590; 
 }
+.user-list td i{
+	cursor: pointer;
+}
+.xPaging button{
+	cursor: pointer;
+}

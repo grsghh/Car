@@ -1,0 +1,9 @@
+.xContent dl input , textarea{
+	text-indent: 8px;
+}
+.xContent dl input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+	color: red;
+}
+
+
+

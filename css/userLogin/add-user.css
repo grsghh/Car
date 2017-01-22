@@ -4,3 +4,126 @@
 .rContainer{
 	margin-top: 14px;
 }
+.xWrap{
+	background: #e9e9e9;
+	overflow: hidden;		
+}
+.xContent{
+	width: 974px;
+	border: 1px solid #c6c6c6;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 56px;
+	padding: 25px 0px 25px 62px;
+	margin-bottom: 36px;
+	position: relative;
+}
+.xContent dl{
+	position: relative;
+	margin-bottom: 14px;
+}
+.xContent dt{
+	width: 70px;
+	height: 31px;
+	text-align: right;
+	font-size: 14px;
+	  font-family: "SimSun";
+	  color: rgb(53, 53, 53);
+	  position: absolute;
+	  line-height: 31px;
+}
+.xContent dt em{
+	color: red;
+	position: relative;
+	top:4px;
+	left: 2px;
+}
+.xContent dd{
+  margin-left:80px;
+}
+.xContent dd input{
+	width: 312px;
+	height: 29px;
+	border: 1px solid #c5c5c5;
+}
+/*去除下拉框默认样式*/
+.xContent select{
+	/*appearance:none;*/
+    /*-moz-appearance:none;*/
+    /*-webkit-appearance:none;*/
+     border-radius: 0px;
+      height: 29px;
+      background: white;
+      text-indent:8px;
+      position: relative;
+}
+.xContent dd select:nth-of-type(1){
+     width: 95px;
+}
+.xContent dd select:nth-of-type(2){
+     width:128px;
+}
+.xContent .changeBig{
+	width: 499px;
+}
+.changeColor{
+	font-size: 12px;
+	color: #1978cf;
+}
+.change-text{
+	width: 499px;
+	height: 102px;
+}
+/*提交*/
+.btn-user button{
+	width: 93px;
+	height: 39px;
+	border: 1px solid #213F7B;
+	background: #3b6bb1;
+	border-radius: 3px;
+	font-size: 14px;
+	color: white;
+	margin-right: 19px;
+}
+.btn-user{
+	font-size: 14px;
+}
+.btn-user i{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../../img/userLogin/weibo.png) no-repeat;
+	vertical-align:text-bottom;
+}
+.btn-user em{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../../img/userLogin/kingjian.png) no-repeat;
+	vertical-align:text-bottom;
+}
+.btn-user span{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../../img/userLogin/tt.png) no-repeat;
+	vertical-align:text-bottom;
+}
+.xContent dl input , textarea{
+	text-indent: 8px;
+}
+/*最上部提示蓝筐*/
+.most-top{
+	background: url(../../img/userLogin/most-top.png) no-repeat;
+	width: 163px;
+	height: 41px;
+	text-align: center;
+	line-height:35px;
+	position: absolute;
+	top:-37px;
+}
+.most-top span{
+	font-size: 14px;
+  font-family: "SimSun";
+  color: rgb(255, 255, 255);
+}

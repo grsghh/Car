@@ -5,7 +5,8 @@
 		<meta charset="utf-8" />
 		<title>车族网</title>
 		<link rel="stylesheet" href="../../css/common/common.css" />
-		<link rel="stylesheet" type="text/css" href="../../css/userLogin/add-user.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/userLogin/xUser-orders.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/userLogin/group-buying.css"/>
 	</head>
 
 	<body>
@@ -25,7 +26,7 @@
 			</div>
 		</div>
 		<!--搜索栏-->
-		<div class="rSerach">
+		<div class="rSerach xChange">
 			<div class="rContainer">
 				<!--左边内容-->
 				<div class="rSerach-left">
@@ -36,22 +37,6 @@
 						<br />
 						<em class="rChangeCity-switch">[切换城市]</em>
 					</span>
-				</div>
-				<!--中间搜索框-->
-				<div class="rSerach-main">
-					<div class="main-title">
-						<span>高尔夫</span>
-						<span>雪铁龙</span>
-						<span>奥迪</span>
-						<span>奔驰</span>
-						<span>宝马</span>
-						<span>三轮车</span>
-					</div>
-					<div class="main-input">
-						<input type="text" class="main-serach" placeholder="搜索商户名、地址、服务等" />
-						<img src="../../img/common/mic.png" class="main-micImg" />
-						<button class="main-btn">搜索</button>
-					</div>
 				</div>
 				<!--右边400-->
 				<div class="rSerach-workTime">
@@ -88,16 +73,8 @@
 				<!--右边个人部分-->
 				<ul class="rNav-right">
 					<li>
-						<img src="../../img/common/shopCar.png" />
-						<a href="">购物车</a>
-						<img src="../../img/common/down.png" />
-					</li>
-					<li>
-						<a href="">最近浏览</a>
-						<img src="../../img/common/down.png" />
-					</li>
-					<li>
-						<a href="">我的车族</a>
+						<a href="#">爱义行</a>
+						<img src="../../img/userLogin/userOrders1.png" alt="" />
 					</li>
 					<li>
 						<a href="../login/login.html">登录</a>
@@ -108,124 +85,94 @@
 				</ul>
 			</div>
 		</div>
+		<!--内容-->
 		<div class="xWrap">
 			<div class="xContent">
-				<div class="most-top">
-				  <span>添加商户(*为必填选项)</span>
-			    </div>
-				<dl>
-					<dt>
-						商户名:
-						<em>*</em>
-					</dt>
-					<dd>
-						<input type="text"/>
-						<i></i>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						公司全称:
-						<em>&nbsp;</em>
-					</dt>
-					<dd>
-						<input type="text"/>
-						<i></i>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						类型:
-						<em>*</em>
-					</dt>
-					<dd>
-						<select name="">
-							<option value="">汽车美容</option>
-							<option value="">哈哈哈</option>
-							<option value="">呵呵呵呵</option>
-						</select>
-						<select name="">
-							<option value="">汽车贴膜</option>
-							<option value="">双击666</option>
-							<option value="">没毛病</option>
-						</select>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						地址:
-						<em>*</em>
-					</dt>
-					<dd>
-						<select name="">
-							<option value="">北京</option>
-							<option value="">日本</option>
-							<option value="">美国</option>
-						</select>
-						<select name="">
-							<option value="">请选择地区</option>
-							<option value="">哈哈</option>
-							<option value="">呵呵</option>
-						</select>
-					</dd>
-				</dl>
-				<dl class="xDress">
-					<dd>
-						<input type="text" class="changeBig"/><br />
-						<i class="changeColor">在地图上标注</i>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						靠近:
-						<em>*</em>
-					</dt>
-					<dd>
-						<input type="text" class="changeBig"/>
-						<i></i>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						电话:
-						<em>*</em>
-					</dt>
-					<dd>
-						010 -
-						<input type="text"/><br />
-						<i class="changeColor">再添加一个电话</i>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						营业时间:
-						<em>&nbsp;</em>
-					</dt>
-					<dd>
-						<textarea name="" rows="" cols="" class="change-text"></textarea>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						驾车路线:
-						<em>&nbsp;</em>
-					</dt>
-					<dd>
-						<textarea name="" rows="" cols="" class="change-text"></textarea>
-					</dd>
-				</dl>
-				<dl class="btn-user">
-					<dd>
-					  <button>提交商户</button>
-					  且同步到 : 
-					  <i></i>
-					  <em></em>
-					  <span></span>
-					</dd>
-				</dl>
+				<div>商户订单管理</div>
+				<ul>
+					
+				</ul>
+				<!--查询框-->
+				<div class="query-user">
+					<img src="../../img/userLogin/userOrders04.png" alt="" />
+					搜项目名称 : <input type="text" placeholder="请输入你想输入的项目"/>		
+					<button>搜索</button>
+				</div>
+				<div class="user-list">
+					<div>
+					<table border="1px" bordercolor="white" cellspacing="0" cellpadding="6px">
+						<tr>
+							<th>团购项目</th>
+							<th>金额</th>
+							<th>购买人数</th>
+							<th>结算人数</th>
+							<th>单笔结款</th>
+							<th>总收入</th>
+						</tr>
+						<tr>
+							<td>朝阳区】车族网仅需99元，即可享原价1680元的卡尔捷德汽车服务汽车美鹰镀膜一次，附赠全车28项安全检查、抛光、精洗、轮胎养护一次、VIP积分卡一张（绝无隐形消费）！赶快为您的贴身爱车做个美容SPA吧，让它为您增光添彩、魅力无限！</td>
+							<td align="center">1089元</td>
+							<td align="center">666人</td>
+							<td align="center">12666</td>
+							<td align="center">2088元</td>
+							<td align="center">22088</td>
+						</tr>
+						<tr>
+							<td>朝阳区】车族网仅需99元，即可享原价1680元的卡尔捷德汽车服务汽车美鹰镀膜一次，附赠全车28项安全检查、抛光、精洗、轮胎养护一次、VIP积分卡一张（绝无隐形消费）！赶快为您的贴身爱车做个美容SPA吧，让它为您增光添彩、魅力无限！</td>
+							<td align="center">1089元</td>
+							<td align="center">666人</td>
+							<td align="center">12666</td>
+							<td align="center">2088元</td>
+							<td align="center">22088</td>
+						</tr>
+						<tr>
+							<td>朝阳区】车族网仅需99元，即可享原价1680元的卡尔捷德汽车服务汽车美鹰镀膜一次，附赠全车28项安全检查、抛光、精洗、轮胎养护一次、VIP积分卡一张（绝无隐形消费）！赶快为您的贴身爱车做个美容SPA吧，让它为您增光添彩、魅力无限！</td>
+							<td align="center">1089元</td>
+							<td align="center">666人</td>
+							<td align="center">12666</td>
+							<td align="center">2088元</td>
+							<td align="center">22088</td>
+						</tr>
+						<tr>
+							<td>朝阳区】车族网仅需99元，即可享原价1680元的卡尔捷德汽车服务汽车美鹰镀膜一次，附赠全车28项安全检查、抛光、精洗、轮胎养护一次、VIP积分卡一张（绝无隐形消费）！赶快为您的贴身爱车做个美容SPA吧，让它为您增光添彩、魅力无限！</td>
+							<td align="center">1089元</td>
+							<td align="center">666人</td>
+							<td align="center">12666</td>
+							<td align="center">2088元</td>
+							<td align="center">22088</td>
+						</tr>
+						<tr>
+							<td>朝阳区】车族网仅需99元，即可享原价1680元的卡尔捷德汽车服务汽车美鹰镀膜一次，附赠全车28项安全检查、抛光、精洗、轮胎养护一次、VIP积分卡一张（绝无隐形消费）！赶快为您的贴身爱车做个美容SPA吧，让它为您增光添彩、魅力无限！</td>
+							<td align="center">1089元</td>
+							<td align="center">666人</td>
+							<td align="center">12666</td>
+							<td align="center">2088元</td>
+							<td align="center">22088</td>
+						</tr>
+						<tr>
+							<td>朝阳区】车族网仅需99元，即可享原价1680元的卡尔捷德汽车服务汽车美鹰镀膜一次，附赠全车28项安全检查、抛光、精洗、轮胎养护一次、VIP积分卡一张（绝无隐形消费）！赶快为您的贴身爱车做个美容SPA吧，让它为您增光添彩、魅力无限！</td>
+							<td align="center">1089元</td>
+							<td align="center">666人</td>
+							<td align="center">12666</td>
+							<td align="center">2088元</td>
+							<td align="center">22088</td>
+						</tr>
+					</table>
+					</div>
+					<!--分页-->
+					<div class="xPaging">
+						<button>
+							<i></i>
+							上一页
+						</button>
+						<button>
+							<i></i>
+							下一页
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
-		
 		<!--底部公共样式-->
 		<div class="rFooter">
 			<div class="rContainer">
@@ -303,6 +250,5 @@
 	</body>
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	<script src="../../js/common/common.js" type="text/javascript" charset="utf-8"></script>
-<script src="../../js/userLogin/add-user.js"></script>
-
+  <script src="../../js/userLogin/xUser-orders.js"></script>
 </html>

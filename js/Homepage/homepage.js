@@ -1,16 +1,3 @@
-//swiper轮播图
-
-//setTimeout(function() {
-//	var ha = new Swiper(".swiper-container", {
-//		direction: "horizontal",
-//		loop: true,
-//		pagination: ".swiper-pagination",
-//		autoplay: 2000,
-//		effect: "overflow"
-//	});
-//}, 10)
-//$(".scrollImg-box").width() = $(".scrollImg-box img:eq(0)").width()*$(".scrollImg-box img").length 
-
 //jq轮播图  
 $(".scrollImg-box").css("width",$(".scrollImg-box img").eq(0).width()*$(".scrollImg-box img").length);
 var index = 0; 
@@ -69,20 +56,39 @@ function changeBall(index){
 	$(".scrollImg-show li").css("background","white")
 	$(".scrollImg-show li").eq(index).css("background","rgb(28,46,106)")
 }
- //自动轮播
 function autoImg(){
-	if(index == 4){
-		index = 0;
-		$(".scrollImg-box").css({
-		left:-$(".scrollImg-show").width()*index
-	});
-	}
-	index++;
-	$(".scrollImg-box").animate({
+	 index++;
+	 if(index==5){
+	  $(".scrollImg-box").css({
+	  	left:0
+	  })
+	   index=1;
+	 }
+	  console.log(index) 
+	 if(index==4){
+	 	changeBall(0);
+	 }else{
+	 	changeBall(index);
+	 }
+	 $(".scrollImg-box").animate({
 		left:-$(".scrollImg-show").width()*index
 	},500);
-	changeBall(index);
-}
+	}
+ //自动轮播
+//function autoImg(){
+//	if(index == 4){
+//		index = 1;
+//		
+//	});
+//}
+//	$(".scrollImg-box").animate({
+//		left:-$(".scrollImg-show").width()*index
+//	},500);
+//	console.log(index)
+//	changeBall(index);
+//	index++;
+//}
+
 //添加计时器
 var timer = setInterval(autoImg,1500);
 $(".scrollImg-show").on("mouseenter",function(){
@@ -95,7 +101,7 @@ $(".scrollImg-show").on("mouseleave",function(){
 //点击返回顶部
 $("#back-top").hide();
 $(window).scroll(function(){
-	if($(window).scrollTop()>1000){
+	if($(window).scrollTop()>800){
 		$("#back-top").show("slow");
 	}else{
 		$("#back-top").fadeOut(500);

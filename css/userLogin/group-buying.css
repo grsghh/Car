@@ -1,0 +1,11 @@
+.xContent ul{
+	padding-top: 23px;
+}
+.query-user input{
+	width: 248px;
+	text-indent: 8px;
+}
+.query-user button{
+	width: 64px;
+	height: 22px;
+}

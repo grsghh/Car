@@ -6,6 +6,7 @@
 		<title>车族网</title>
 		<link rel="stylesheet" href="../../css/common/common.css" />
 		<link rel="stylesheet" type="text/css" href="../../css/userLogin/add-user.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/userLogin/add-shop.css"/>
 	</head>
 
 	<body>
@@ -111,12 +112,22 @@
 		<div class="xWrap">
 			<div class="xContent">
 				<div class="most-top">
-				  <span>添加商户(*为必填选项)</span>
+				  <span>添加分店(*为必填选项)</span>
 			    </div>
 				<dl>
 					<dt>
 						商户名:
 						<em>*</em>
+					</dt>
+					<dd>
+						<input type="text" placeholder="爱义行"/>
+						<i></i>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						分店名:
+						<em>&nbsp;</em>
 					</dt>
 					<dd>
 						<input type="text"/>
@@ -171,7 +182,7 @@
 				</dl>
 				<dl class="xDress">
 					<dd>
-						<input type="text" class="changeBig"/><br />
+						<input type="text" class="changeBig" placeholder="详细地址，如天通宛西二区11号楼403"/><br />
 						<i class="changeColor">在地图上标注</i>
 					</dd>
 				</dl>
@@ -181,7 +192,7 @@
 						<em>*</em>
 					</dt>
 					<dd>
-						<input type="text" class="changeBig"/>
+						<input type="text" class="changeBig" placeholder="如：安立路或五号地铁"/>
 						<i></i>
 					</dd>
 				</dl>
@@ -192,7 +203,7 @@
 					</dt>
 					<dd>
 						010 -
-						<input type="text"/><br />
+						<input type="text" placeholder="如：64117830或18601199559"/><br />
 						<i class="changeColor">再添加一个电话</i>
 					</dd>
 				</dl>
@@ -202,7 +213,7 @@
 						<em>&nbsp;</em>
 					</dt>
 					<dd>
-						<textarea name="" rows="" cols="" class="change-text"></textarea>
+						<textarea name="" rows="" cols="" class="change-text" placeholder="9：00-18：00"></textarea>
 					</dd>
 				</dl>
 				<dl>
@@ -211,7 +222,7 @@
 						<em>&nbsp;</em>
 					</dt>
 					<dd>
-						<textarea name="" rows="" cols="" class="change-text"></textarea>
+						<textarea name="" rows="" cols="" class="change-text" placeholder="地铁5/13号线 - 天通苑站，公交758/617路 - 东三旗南站"></textarea>
 					</dd>
 				</dl>
 				<dl class="btn-user">
@@ -302,7 +313,6 @@
 		</div>
 	</body>
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-	<script src="../../js/common/common.js" type="text/javascript" charset="utf-8"></script>
 <script src="../../js/userLogin/add-user.js"></script>
-
+<script src="../../js/common/common.js" type="text/javascript" charset="utf-8"></script>
 </html>
