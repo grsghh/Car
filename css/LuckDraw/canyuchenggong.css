@@ -31,6 +31,11 @@ li{
 	margin-top: 10px;
 	text-indent: 10px;
 }
+.sDrawMsg img{
+	float: right;
+	padding-top: 8px;
+	padding-right: 12px;
+}
 .sMain{
 	width: 976px;
 	/*overflow: hidden;*/
@@ -54,6 +59,7 @@ li{
 	background-color: #fff;
 	padding: 0px 30px 54px;
 	border: 1px solid #CFCFCF;
+	position: relative;
 }
 .sTop{
 	text-align: center;
@@ -281,16 +287,22 @@ li{
 	z-index: 11;
 }
 .sMenuContent{
-	padding:0px 30px 28px;
+	padding:20px 30px 28px;
 	border-left: 1px solid #CFCFCF;
 	border-right: 1px solid #CFCFCF;
 	border-bottom: 1px solid #CFCFCF;
 	background-color: #fff;
+	min-height: 506px;
+}
+.sMenuContent h5{
+	line-height: 36px;
+	color: #6F7070;
+	font-size: 14px;
 }
 .subMenu{
 	border-bottom: 2px solid #F6F6F6;
 	margin-bottom: 10px;
-	padding-top: 20px;
+	padding-bottom: 5px;
 	overflow: hidden;
 }
 .subMenu li{
@@ -314,7 +326,10 @@ li{
 	font-weight: 800;
 	background-color: #F7F7F7;
 }
-#table tr  td{
+#table tr th:nth-child(1){
+	width: 43.75%;
+}
+#table tr td{
 	font-size: 12px;
 	line-height: 16px;
 }
@@ -322,13 +337,10 @@ li{
 	border-bottom: 1px dashed #EDEDED;
 }
 #table tr th,#table tr td{
-	padding:1.8%;
-
+	padding:10.6px;
 }
 
-#table tr th:nth-child(1){
-	width: 43.75%;
-}
+
 #table tr td img{
 	vertical-align: middle;
 }
@@ -337,9 +349,14 @@ li{
 	width: 59.4%;
 	text-align: left;
 	vertical-align: middle;
+	/*line-height: 18px;*/
 }
-#table tr td em,#table tr td a{
+#table tr td em,#table tr td label{
 	display: block;
+	line-height: 22px;
+}
+#table tr td label a{
+	padding: 5px;
 }
 
 /*右边部分*/
@@ -493,7 +510,7 @@ li{
 .sMenuStyle{
 	background-color: #fff;
 	border-bottom: 1px solid #fff !important;
-	color: #333;
+	color: #333 !important;
 }
 .subMenuStyle{
 	background-color: #5296D1;
@@ -501,13 +518,449 @@ li{
 }
 
 
+/*弹框*/
+.msg{
+	width: 344px;
+	height: 185px;
+	box-shadow: 1px 2px 12px 2px #A6A9AE;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: none;
+}
+.msgT{
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	color: #E6E7E7;
+	background-color: #1D3E78;
+	font-size: 18px;
+}
+.msgT h4{
+	display: inline-block;
+	text-indent: 1em;
+}
+.msgT span{
+	display: inline-block;
+	width: 34px;
+	text-align: center;
+	float: right;
+	background-color: #163064;
+}
+.msgCont{
+	padding: 32px 28px;
+	background-color: #fff;
+	color: #333;
+	font-size: 14px;
+}
+.msgCont p img{
+	vertical-align: middle;
+}
+.msgCont p em{
+	padding-left: 18px;
+}
+.msgBtn{
+	text-align: center;
+	color: #E6E7E7;
+	line-height: 34px;
+	margin-top: 20px;
+}
+.msgBtn span{
+	display: inline-block;
+	width: 74px;
+	background: -webkit-linear-gradient(top,#2C58A8 50%,#1D3E78 50%);
+	margin: 0px 6px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 2px #1D3E78;
+}
 
+/*订单详情*/
+.sDetailT,.sWithDrawT {
+	border-bottom: 2px solid #EDEDED;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	
+}
+.sDetailT h3,.sWithDrawT h3{
+	display: inline-block;
+	font-size: 26px;
+	line-height: 44px;
+	color: #646566;
+}
+.sDetailT a,.sWithDrawT a{
+	float: right;
+	color: #78B3E1;
+	padding-top: 24px;
+	font-size: 14px;
+}
 
+.sOrderNow{
+	background-color: #FFFBF2;
+	border: 1px solid #FAE8C5;
+	padding: 10px 15px;
+	font-size: 13px;
+}
+.sOrderNow dt,.sOrderNow dd{
+	line-height: 20px;
+}
+.sOrderNow dt{
+	font-weight: bold;
+}
+.sOrderNow dt em{
+	color: red;
+}
+.sDPay{
+	width: 46px;
+	height: 26px;
+	display: inline-block;
+	line-height: 26px;
+	text-align: center;
+	border-radius: 3px;
+	margin-right:10px;
+	color: #fff;
+	background-color: #3368AA;
+}
+.sDDel{
+	color: #2F89CD;
+}
 
+.table2{
+	clear: both;
+	width: 100%;
+	border: 1px solid #DCEEFC;
+	text-align: left;
+	border-collapse: collapse;
+}
+.table2 caption{
+	text-align: left;
+	background-color: #D1E9FC;
+	line-height: 32px;
+	padding-left: 5px;
+	font-weight: 900;
+}
+.table2 tr th:nth-child(n+2),.table2 tr td:nth-child(n+2){
+	text-align: center;
+}
+.tl{
+	text-align: left !important;
+}
+.table2 tr th,.table2 tr td{
+	padding: 15px 5px;
+	font-size: 14px;
+}
+.table2 tr td{
+	font-size: 12px;
+}
+.cr{
+	color: red;
+}
+.cg{
+	color: #30A1A0;
+}
+.bcgray{
+	background-color: #F6F6F6;
+}
+.p-1{
+	padding: 15px 28px !important;
+	
+}
+/*提交订单*/
+.lslide h4{
+	font-size: 14px;
+	line-height: 38px;
+}
+.sProgressBar div{
+	display: inline-block;
+	position: relative;
+	width: 32.9%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+.sProgressBar1{
+	color: #fff;
+	background-color: #346AAE;
+}
 
+.sProgressBar1:after,.sProgressBar2:after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	right: -30px;
+}
+.sProgressBar1:after{
+	border-left-color: #346AAE;
+	z-index: 21;
+}
+.sProgressBar2:after{
+	border-left-color: #ECECEC;
+	z-index: 11;
+}
 
+.sProgressBar2,.sProgressBar3{
+	color: #333;
+	background-color: #ECECEC;
+}
+.sProgressBar2:before,.sProgressBar3:before{
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-left-color:#fff;
+	left: 0px;
+}
+.hehe{
+	height: 60px;
+}
+.del,.add{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	text-align: center;
+	line-height: 12px;
+	border: 1px solid #979797;
+} 
+.del{
+	opacity: .5;
+}
+.count{
+	width: 60px;
+	height: 30px;
+	outline: none;
+	border: 1px solid #E1E1E2;
+	text-align: center;
+	font-size: 14px;
+}
+.bbd{
+	border-bottom: 1px dashed #EEEEEE;
+}
+.payCount{
+	color: red;
+	font-size: 20px !important;
+}
+.sPO{
+	height: 44px;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	overflow: hidden;
+}
+.sPO span{
+	float: right;
+	display: inline-block;
+	line-height: 44px;
+	width: 100px;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	background-color: #346AAE;
+	border-radius: 5px;
+}
 
+/*选择支付方式*/
+.sPayStyleInfo dt,.sPayStyleInfo dd{
+	font-size: 12px;
+	line-height: 22px;
+	text-align: left;
+}
+.payable2{
+	font-size: 18px;
+	font-weight: bold;
+}
+.payable2 strong{
+	color: red;
+}
 
+.sPayStyles{
+	background-color: #F7F7F7;
+	padding: 20px;
+}
+
+.sCredit,
+.sAlipay{
+	display: none;
+}
+.sPayStyles>div h4{
+	font-size: 14px;
+}
+.sNetPay dl dt{
+	padding-bottom: 10px;
+}
+.sPayComm{
+	overflow: hidden;
+	display: none;
+}
+.otherCheck,.sPayComm li{
+	float: left;
+	line-height: 34px;
+	margin-right: 30px;
+}
+.sPayComm li{
+	padding-bottom: 10px;
+}
+.sPayComm li img,.otherCheck img{
+	vertical-align: middle;
+}
+.other{
+	display: inline-block;
+	line-height: 34px;
+	font-size: 13px;
+}
+.sPayBot dt,.sPayBot dd{
+	text-align: right;
+	line-height: 44px;
+}
+.sPayBot dt span{
+	color: red;
+}
+#spay{
+	width: 96px;
+	line-height: 44px;
+	text-align: center;
+	background-color: #346AAE;
+	color: #fff;
+	outline: none;
+	border-radius: 5px;
+}
+.mb-44{
+	margin-bottom: 44px;
+}
+input[type=radio]{
+	width: 14px;
+	margin-left: 10px;
+}
+/*购买成功*/
+.sOver{
+	width: 100%;
+	height: 400px;
+	text-align: center;
+}
+.sOver span{
+	font-size: 38px;
+	color:red;
+	line-height: 400px;
+}
+.p-5{
+	padding: 5px;
+}
+.buyStyle{
+	color: #fff;
+	background-color: #5195CF;
+}
+.sNo,
+.noCollecte{
+	display: none;
+}
+.noCollecte div{
+	width: 482px;
+	height: 385px;
+	margin-left: 45px;
+	margin-top: 30px;
+}
+
+/*余额*/
+.sBalanceCont{
+	height: 34px;
+	line-height: 34px;
+	padding-bottom:22px;
+	font-size: 14px;
+}
+.sBalanceCont var{
+	color: red;
+	font-size: 22px;
+}
+.sRecharge,.sWithdrawals{
+	display: inline-block;
+	width: 64px;
+	line-height: 34px;
+	text-align: center;
+	border-radius: 5px;
+	margin-left: 8px;
+}
+.sRecharge{
+	color: #fff;
+	background-color: #346AAE;
+}
+.sWithdrawals{
+	background-color: #EDEDED;
+}
+/*提现记录*/
+.sWithdrawalsNow{
+	height: 42px;
+	border: 1px solid #F8E3B8;
+	background-color: #FFFBF2;
+	padding-left: 5px;
+	line-height: 42px;
+	margin-bottom: 10px;
+}
+.sWithdrawalsNow span strong{
+	color: red;
+	font-size: 20px;
+}
+.sWithDrawInfo{
+	padding-left: 20px;
+	font-size: 12px;
+	margin-bottom: 42px;
+}
+.sWithDrawInfo div{
+	height: 25px;
+}
+.noWithDraw>span{
+	color: #A1A1A1;
+}
+.canWithDraw strong{
+	color: red;
+}
+/*充值*/
+.balanceMoney{
+	padding-left: 20px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+}
+.balanceMoney input{
+	width: 210px;
+	border: 1.7px solid #FDAEA8;
+	padding: 5px;
+	margin-left: 13px;
+	margin-right: 10px;
+}
+.balanceText{
+	float: left;
+}
+.balanceMsg{
+	display: none;
+	float: left;
+	border: 1px solid #FFD6D7;
+	background-color: #FFF1F1;
+	line-height: 30px;
+	padding: 0px 5px;
+	margin-left: 15px;
+	color: #333;
+}
+.balanceMsg cite img{
+	vertical-align: middle;
+}
+.balanceDiv button{
+	display: block;
+	width: 124px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	outline:none;
+	border: none;
+	color: #fff;
+	background-color: #3469AD;
+	border-radius: 5px;
+	margin-left: 86px;
+	margin-top: 15px;
+}
 
 
 

@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>抽奖详情</title>
+		<title>我的收藏</title>
 		<link rel="stylesheet" type="text/css" href="../../css/common/common.css"/>
 		<link rel="stylesheet" type="text/css" href="../../css/LuckDraw/canyuchenggong.css" />
 	</head>
@@ -118,43 +118,109 @@
 		<!--公共头部 e-->
 		<!--内容976 s-->
 		<div class="sContent">
+			<!--未付款头部消息栏-->
+			<em class="sDrawMsg">
+				还有7个订单未付款, <a href="###">快来支付吧!</a> 以免团购抢光了。
+			</em>
 			<!--主体部分 s-->
 			<div class="sMain">
+				<!--会到吧顶部-->
+				<a href="#" class="sReTop"><img src="../../img/LuckDraw/returnTop.png" alt="顶部" /></a>
 				<!--左边部分 s-->
-				<div class="lslide">
-					<!--顶部 s-->
-					<div class="sTop">
-						<div class="sTopT bb mb-30">
-							<h4>抽奖详情</h4>
-							<strong>车族网让你<em>美</em>梦成真</strong>
+				<div class="lslide p-0">
+					<div class="line"></div>
+					<ul class="sMenu">
+						<li>团购订单</li>
+						<li>我的评价</li>
+						<li class="sMenuStyle">我的收藏</li>
+						<li>车族余额</li>
+						<li>充值/提现</li>
+						<li>代金券</li>
+						<li>我的积分</li>
+						<li>账户设置</li>
+					</ul>
+					<div class="sMenuContent">
+						<ul class="subMenu">
+							<li class="subMenuStyle">全部</li>
+							<li>进行中</li>
+							<li>已结束</li>
+						</ul>
+						<!--未收藏-->
+						<div class="noCollecte">
+							<h5>你还没有收藏过呢,现在可以再详情页直接收藏项目了</h5>
+							<div>
+								<img src="../../img/OrderForm/collecte.png"/>
+							</div>
 						</div>
-						<div class="sTopBg">
-							<img src="../../img/LuckDraw/car1.png"/>
-						</div>
-						<div class="sTopb">
-							<strong>美梦成真,大众汽车u210,车族网免费送</strong>
-							<a href="###" class="cr">活动正在进行,请及时参与抽奖,带开奖日的上证.深证故事完了</a>
-							<span>2013年07月12日下午5点开出1位中奖者</span>
-						</div>
+						<!--收藏没有进行中的项目-->
+						<h5 class="sNo">您的收藏中没有进行中的项目</h5>
+						<table id="table" cellspacing="0">
+							<tr>
+								<th>团购项目</th>
+								<th>金额</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+							<tr>
+								<td>
+									<img src="../../img/LuckDraw/smallcar1.png" />
+									<span>新micask伪装新武安站暗示你电脑水水水水</span>
+								</td>
+								<td>
+									<em>¥30</em>
+								</td>
+								<td>
+									<em>进行中</em>
+								</td>
+								<td>
+									<a href="###"  class="buyStyle p-5">购买</a>
+									<a href="###" class="p-5">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../../img/LuckDraw/smallcar2.png" />
+									<span>新micask伪装新武安站暗示你电脑水水水水</span>
+								</td>
+								<td>
+									<em>¥301</em>
+								</td>
+								<td>
+									<em>进行中</em>
+								</td>
+								<td>
+									<a href="###"  class="buyStyle p-5">购买</a>
+									<a href="###" class="p-5">删除</a>
+								</td>
+							</tr>
+						</table>
 					</div>
-					<!--/顶部 e-->
-					<!---->
-					<div class="sSec">
-						<h4>特别提示</h4>
-						<h5>关注美团微信,即时获得开奖信息</h5>
-						<div class="er">
-							<img src="../../img/LuckDraw/erweima.png"/>
-						</div>
-					</div>
-					
 				</div>
 				<!--左边部分 e-->
-				
+				<!--右边部分 s-->
+				<div class="rslide">
+					<dl class="sCustom">
+						<dt>车族客服</dt>
+						<dd><img src="../../img/LuckDraw/phone2.png" /> 4006-630-636</dd>
+						<dd>工作时间: 每日9:00-21:00</dd>
+					</dl>
+					<div class="sCue">
+						<h4>小提示</h4>
+						<dl>
+							<dt>为什么使用过的订单仍然显示"未使用"?</dt>
+							<dd>订单的使用状态更新可能会有延迟,订单的真实使用状态以实际消费情况为准,尽请谅解</dd>
+						</dl>
+						<dl>
+							<dt>那种订单可以评价?</dt>
+							<dd><em>•</em><span>订单的使用状态更新可能会有延迟</span></dd>
+							<dd><em>•</em><span>订单的使用状态更新可能会有延迟,订单的真实使用状态以实际消费情况为准</span></dd>
+						</dl>
+					</div>
+				</div>
 				<!--右边部分 e-->
 				<!--清除父级塌陷-->
 				<div class="sclear"></div>
-				<!--会到吧顶部-->
-				<a href="#" class="sReTop"><img src="../../img/LuckDraw/returnTop.png" alt="顶部" /></a>
+				
 			</div>
 			<!--主体部分 e-->
 
@@ -238,5 +304,6 @@
 	</body>
 	<script type="text/javascript" src="../../js/common/jquery-3.1.1.min.js"></script>
 	<script src="../../js/common/common1.js"></script>
+	<script type="text/javascript" src="../../js/LuckDraw/choujiang.js"></script>
 
 </html>
