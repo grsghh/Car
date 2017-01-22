@@ -314,6 +314,9 @@ li{
 	font-size: 12px;
 	color: #0C7FCE;
 }
+table,tr{
+	width: 100%;
+}
 #table{
 	clear: both;
 	border: 2px solid #E7E7E7;

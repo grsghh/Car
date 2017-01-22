@@ -20,6 +20,14 @@ $(function(){
 			"transform":'scale(1,1)'
 		})
 	})
+	$('.orderDel').click(function(){
+		var that = $(this);
+		$('.ok').click(function(){
+			$('.msg').hide();
+			that.parent().parent().remove();
+		})
+		
+	})
 })
 //链接
 $(function(){
@@ -39,7 +47,7 @@ $(function(){
 		window.location.href = 'rechange.html';
 	})
 	$('.mm').click(function(){
-			window.location.href = '../LuckDraw/wodemeimengchengzhen.html';
+			window.location.href = 'wodemeimengchengzhen.html';
 	})
 	
 })
