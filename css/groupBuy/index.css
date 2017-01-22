@@ -1,3 +1,9 @@
+.rNav-left li:nth-child(1) {
+	background: rgb(33,63,123);
+}
+.rNav-left li:nth-child(4) {
+	background: rgb(16,31,75);
+}
 .rTopAd .rContainer {
 	margin-bottom: 0;
 }
