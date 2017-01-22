@@ -1,3 +1,11 @@
+//跳转
+$(".rNav-left li:nth-child(1) a").attr("href","../Homepage/homepage.html");
+$(".rNav-left li:nth-child(2) a").attr("href","../LuckDraw/choujiang.html");
+$(".rNav-left li:nth-child(3) a").attr("href","../userLogin/userLogin.html");
+$(".rNav-left li:nth-child(4) a").attr("href","../groupBuy/index.html");
+$(".rNav-left li:nth-child(5) a").attr("href","###");
+$(".rNav-left li:nth-child(6) a").attr("href","../News/news.html");
+
 $(".rChangeCity-txt").text(localStorage.city);
 var provincesArr = [
 	"北京",
