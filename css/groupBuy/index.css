@@ -1,0 +1,758 @@
+.rTopAd .rContainer {
+	margin-bottom: 0;
+}
+
+.rTopAd {
+	background: #e9e9e9;
+	padding-top: 6px;
+	padding-bottom: 10px;
+}
+.rNav-right li{
+	margin: 13px 0;
+}
+.rFooter {
+	clear: both;
+}
+
+.main {
+	background: #e9e9e9;
+}
+
+
+/*未支付订单*/
+
+.noPay {
+	border: 1px solid #C5C5C5;
+	height: 38px;
+	line-height: 38px;
+	font-size: 12px;
+	font-family: "SimSun";
+	color: rgb(0, 0, 0);
+	padding-left: 20px;
+	margin-bottom: 5px;
+	background: white;
+}
+
+.noPay a {
+	color: #096edf;
+}
+
+
+/*导航栏*/
+
+.nav {
+	height: 253px;
+	border: 1px solid #C5C5C5;
+	background: white;
+}
+
+
+/*热门团购*/
+
+.nav-hot {
+	padding-left: 20px;
+	font-size: 12px;
+	font-family: "SimSun";
+	overflow: hidden;
+	height: 34px;
+	border-bottom: 1px solid #C5C5C5;
+	line-height: 34px;
+}
+
+
+/*热门中的热门*/
+
+.nav-hot .hotColor {
+	color: #e40d1a;
+}
+
+.nav-hot dt {
+	margin-right: 22px;
+	float: left;
+}
+
+.nav-hot dd {
+	color: #225a9a;
+	margin-right: 15px;
+	float: left;
+	cursor: pointer;
+}
+
+
+/*分类*/
+
+.nav-sort {
+	padding: 14px 23px 0px 20px;
+}
+
+.nav-sort ul {
+	font-size: 12px;
+	font-family: "SimSun";
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.nav-sort li {
+	padding-left: 59px;
+	line-height: 18px;
+}
+
+
+/*带icon分类头*/
+
+.nav-sort .sortIcon {
+	position: absolute;
+	left: 0;
+	padding-left: 23px;
+	width: 51px;
+	height: 16px;
+	background: url(../../img/groupBuy/sort.png) no-repeat;
+	line-height: 18px;
+}
+
+.sortHead {
+	margin-bottom: 10px;
+}
+
+.sortHead span,
+.sortList span {
+	display: inline-block;
+	height: 17px;
+	color: #225a9a;
+	cursor: pointer;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-bottom: 7px;
+}
+
+
+/*细分分类*/
+
+.nav-sort .sortList {
+	padding-left: 10px;
+	padding-top: 6px;
+	margin-left: 59px;
+	background: #efeff0;
+}
+
+.sortList span {
+	/*margin-top: 9.5px;*/
+}
+
+
+/*区域*/
+
+.sort-location .sortIcon {
+	background-image: url(../../img/groupBuy/location.png);
+}
+
+.sortHead .area_haidian {
+	background: #225a9a;
+	color: white;
+}
+
+.sort-location .sortList .sortAll {
+	background: #225a9a;
+	color: white;
+}
+
+
+/*热门*/
+
+.sort-hot .sortIcon {
+	background-image: url(../../img/groupBuy/hot.png);
+}
+
+
+/*排序*/
+
+.nav-reorder {
+	overflow: hidden;
+	padding-left: 20px;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	border: 1px solid #C5C5C5;
+	border-top: none;
+	background: #f7f7f7;
+}
+
+.nav-reorder li {
+	float: left;
+	font-size: 12px;
+	font-family: "SimSun";
+}
+
+.reorder-left {
+	border: 1px solid #C5C5C5;
+	overflow: hidden;
+}
+
+.reorder-left span {
+	float: left;
+	background: #eeeded;
+	padding-left: 5px;
+	padding-right: 1px;
+	padding-top: 4.5px;
+}
+
+.reorder-left a {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 10px;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	background: white;
+	float: left;
+}
+
+.reorder-left a:nth-of-type(odd) {
+	border-right: 1px solid #e8e8e8;
+	padding-left: 14px;
+	padding-right: 9px;
+}
+
+.reorder-left i {
+	display: inline-block;
+	width: 9px;
+	height: 10px;
+	background: url(../../img/groupBuy/down.png) no-repeat;
+	margin-left: 3px;
+	vertical-align: middle;
+}
+
+.reorder-right {
+	margin-left: 20px;
+}
+
+
+/*免预约快*/
+
+.reorder-right {
+	margin-top: 4.5px;
+}
+
+.reorder-right span {
+	margin-right: 19px;
+}
+
+
+/*产品区*/
+
+.main-proList {
+	margin-top: 12px;
+	padding-bottom: 17px;
+	position: relative;
+}
+
+.main-proList>ul {
+	float: left;
+	margin-bottom: 30px;
+}
+
+
+/*左边*/
+
+.proList-left {
+	/*width: 717px;*/
+}
+
+.proList-left li {
+	border: 1px solid #C5C5C5;
+	width: 347px;
+	float: left;
+	background: white;
+	position: relative;
+	padding: 11px 13px 17px 12px;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+}
+
+.proList-left li:nth-child(odd) {
+	margin-right: 24px;
+}
+
+
+/*产品图片*/
+
+.proImg {
+	height: 179px;
+	margin-bottom: 10px;
+}
+
+.proImg img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*产品名*/
+
+.proName {
+	font-size: 18px;
+	font-family: "MicrosoftYaHei";
+	color: rgb(40, 40, 40);
+	margin-bottom: 9px;
+	margin-left: -10px;
+}
+
+
+/*产品简介*/
+
+.proIntr {
+	font-size: 16px;
+	font-family: "SimSun";
+	color: rgb(102, 102, 102);
+	margin-bottom: 9px;
+	position: relative;
+	height: 32px;
+}
+
+
+/*产品信息*/
+
+.proInfo {
+	width: 100%;
+}
+
+.proInfo-label {
+	display: inline-block;
+	background: url(../../img/groupBuy/label.png) no-repeat;
+	width: 231px;
+	height: 70px;
+	margin-left: -21px;
+	margin-right: 10px;
+	line-height: 80px;
+	position: relative;
+}
+
+.proInfo-price {
+	font-size: 29.617px;
+	font-family: "FZHTJW";
+	color: rgb(228, 13, 26);
+}
+
+.proInfo-label em {
+	margin-left: 30px;
+	font-size: 12px;
+	font-family: "SimSun";
+	color: rgb(152, 156, 156);
+	line-height: 1.833;
+}
+
+
+/*商品状态*/
+
+.proInfo-state {
+	position: absolute;
+	font-size: 12px;
+	font-family: "SimSun";
+	color: rgb(91, 91, 91);
+}
+
+.proInfo-state span {
+	display: inline-block;
+	width: 90px;
+	height: 36px;
+	background: url(../../img/groupBuy/label2.png);
+	line-height: 36px;
+	text-align: center;
+	color: white;
+	margin-top: 16px;
+	margin-bottom: 7px;
+	font-size: 18px;
+	font-family: "MicrosoftYaHei";
+}
+
+.proInfo-state i {
+	font-size: 14px;
+	font-family: "Arial";
+	color: rgb(228, 13, 26);
+}
+
+.proInfo-state .sellOut {
+	background-image: url(../../img/groupBuy/label3.png);
+}
+
+
+/*右边*/
+
+.main-proList .proList-right {
+	margin-left: 21px;
+	width: 236px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.proList-right li {
+	border: 1px solid #C5C5C5;
+	margin-bottom: 10px;
+	background: white;
+}
+
+.promise-title {
+	background: #f7f7f7;
+	text-align: center;
+	font-size: 18px;
+	font-family: "SimHei";
+	color: rgb(3, 72, 134);
+	height: 40px;
+	line-height: 40px;
+	letter-spacing: 5px;
+	font-weight: 900;
+}
+
+.promise-intr {
+	background: white;
+	height: 66px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.promise-intr div {
+	text-align: center;
+	font-size: 12px;
+	font-family: "SimSun";
+	color: rgb(3, 72, 134);
+}
+
+.promise-intr img {
+	margin-bottom: 8px;
+}
+
+
+/*客服块*/
+
+.service {
+	padding: 26px 14px;
+	border: 1px solid #c5c5c5;
+	background: white;
+	margin-bottom: 10px;
+}
+
+.service dt {
+	color: #535455;
+	margin-bottom: 25px;
+}
+
+.service i {
+	display: inline-block;
+	width: 29px;
+	height: 22px;
+	background: url(../../img/login/serive.png) no-repeat;
+	margin-right: 5px;
+	margin-left: 4px;
+}
+
+.service dd:nth-child(2) {
+	color: #034886;
+	font-size: 17px;
+	font-family: "AvantGardeITCbyBT";
+	margin-bottom: 12px;
+}
+
+.service dd:nth-child(3) {
+	color: #6e6c6c;
+	font-size: 12px;
+	font-family: "SimSun";
+	margin-left: 5px;
+}
+
+
+/*热销排行*/
+
+.hotRank {
+	padding: 15px 15px 15px 15px;
+	background: white;
+	border: 1px solid #C5C5C5;
+}
+
+
+/*标题*/
+
+.hotRank-title {
+	font-size: 14px;
+	font-family: "SimSun";
+	color: rgb(53, 51, 51);
+	font-weight: 900;
+}
+
+
+/*产品排行细分*/
+
+.hotRank-rankInfo {
+	margin-top: 25px;
+}
+
+.rankInfo-title {
+	font-size: 12px;
+	font-family: "SimSun";
+	color: rgb(51, 51, 51);
+}
+
+.rankInfo-title i {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 3px;
+	color: white;
+	background: #1376ce;
+	line-height: 1.4;
+	text-align: center;
+	vertical-align: text-bottom;
+}
+
+.rankInfo-info {
+	/*overflow: hidden;*/
+	height: 49px;
+	margin-top: 13px;
+	position: relative;
+}
+
+.rankInfo-info div {
+	float: left;
+}
+
+.rankInfo-img {
+	width: 81px;
+	height: 49px;
+}
+
+.rankInfo-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.rankInfo-info div:nth-child(2) {
+	position: absolute;
+	right: 25px;
+	bottom: 0;
+}
+
+.hotCarPrice {
+	font-size: 14px;
+	font-family: "FZHTJW";
+	color: rgb(228, 13, 26);
+}
+
+.hotCarCount {
+	font-size: 12px;
+	font-family: "SimSun";
+	color: rgb(153, 153, 153);
+}
+
+.hotCarCount em {
+	color: black
+}
+
+
+/*抽奖*/
+
+.right-lottery {
+	padding: 18px 10px;
+	background: white;
+	font: 16px/1.4em tahoma, arail;
+}
+
+.right-lottery>i {
+	display: inline-block;
+	width: 71px;
+	height: 58px;
+	background: url(../../img/Homepage/right-gift.png) no-repeat;
+	vertical-align: text-bottom;
+}
+
+.right-lottery div {
+	font-size: 12px;
+}
+
+.right-lottery div:nth-of-type(1) {
+	display: inline-block;
+}
+
+.right-lottery div:nth-of-type(1) em {
+	font-size: 16px;
+	color: red;
+}
+
+.right-lottery div:nth-of-type(-n+2) span {
+	color: #1376ce;
+}
+
+.right-lottery div:nth-of-type(n+3) span {
+	color: red;
+}
+
+.right-lottery div:nth-of-type(2) {
+	margin-top: 10px;
+}
+
+
+/*最近浏览*/
+
+.lastView {
+	padding: 15px;
+	background: white;
+	/*font:16px/1.4em tahoma,arail;*/
+}
+
+
+/*.lastView .hotRank-rankInfo{
+	width: auto;
+}*/
+
+.lastView a {
+	font-size: 12px;
+	font-family: "SimSun";
+	color: rgb(9, 110, 223);
+	float: right;
+	line-height: 1.5;
+}
+
+.lastView-title {
+	font-size: 12px;
+	font-family: "SimSun";
+	color: rgb(102, 102, 102);
+	display: inline-block;
+	width: 126px;
+	line-height: 1.2;
+	margin-bottom: 5px;
+}
+
+.lastView-info {
+	font-size: 12px;
+	font-family: "SimSun";
+	color: rgb(102, 102, 102);
+}
+
+.lastView-info em {
+	font-size: 18px;
+	font-family: "FZHTJW";
+	color: rgb(199, 4, 4);
+}
+
+.lastView .hotRank-rankInfo .rankInfo-price {
+	width: 120px;
+	right: 0;
+	top: 0;
+}
+
+
+/*最新通知*/
+
+.newNotice {
+	padding: 15px;
+}
+
+.newNotice .hotRank-title {
+	margin-bottom: 27px;
+}
+
+.newNotice-details {
+	margin-top: 12px;
+	font-size: 14px;
+	font-family: "SimSun";
+	color: rgb(82, 77, 77);
+}
+
+.newNotice-details i {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: url(../../img/common/dian.png) no-repeat;
+	margin-right: 7px;
+	vertical-align: middle;
+}
+
+.newNotice-details a {
+	color: #096edf;
+}
+
+
+/*商务合作*/
+
+.business {
+	text-align: center;
+	padding: 15px;	
+}
+
+.business .hotRank-title {
+	text-align: left;
+	margin-bottom: 26px;
+	
+}
+
+.business div:nth-child(3) {
+	font-size: 11px;
+	font-family: "MicrosoftYaHei";
+	color: rgb(83, 82, 83);
+	margin-bottom: 11px;
+	letter-spacing: 2px;
+}
+.business div:nth-child(5) {
+	 font-size: 16.238px;
+  font-family: "MicrosoftYaHei";
+  color: rgb(140, 140, 140);
+  letter-spacing: 6px;
+}
+/*底部产品分页*/
+.proList-pageCount{
+	clear: both;
+	overflow: hidden;
+}
+.pageCount-main{
+	float: left;
+	margin-left: 249px;
+	overflow: hidden;
+}
+.pageCount-main li{
+	float: left;
+	padding: 7px 4px 7px 3px;
+	margin-right: 4px;
+	border: 1px solid #C5C5C5;
+	background: white;
+	color: #235590;
+	font-size: 12px;
+	min-width: 21px;
+	height: 26px;
+	text-align: center;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.pageCount-main .pageCount-pre, .pageCount-main .pageCount-next{
+	font-size: 14px;
+	padding-top: 5px;
+}
+.pageCount-pre i{
+	display: inline-block;
+	width: 5px;
+	height: 9px;
+	margin-right: 3px;
+	background: url(../../img/common/pre.png);
+}
+.pageCount-next i{
+	display: inline-block;
+	width: 5px;
+	height: 9px;
+	margin-left: 4px;
+	background: url(../../img/common/next.png);
+}
+.pageCount-main .pageOn{
+	color: white;
+	background: #152e4d;
+	border: none;
+}
+/*点击返回顶部*/
+#back-top{
+	width: 54px;
+	height: 54px;
+	background:#a6a3ad;
+	border-radius:5px;
+	text-align: center;
+	line-height:90px;
+	clear: both;
+	position: fixed;
+	right: 38px;
+	bottom:15%;
+}
