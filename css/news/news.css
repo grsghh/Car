@@ -18,6 +18,12 @@ a{
 li{
 	list-style: none;
 }
+.rNav-left li:nth-child(1) {
+	background: rgb(33,63,123);
+}
+.rNav-left li:nth-child(6) {
+	background: rgb(16,31,75);
+}
 /*2017-01-13 by@bo*/
 .sContent{
 	width: 976px;

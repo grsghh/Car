@@ -36,6 +36,7 @@ function createCode(){
 	$(".xRight-con em").text(xCode);
 }
 //判断验证码是否输入正确
+var bol = false;
 $(document).on("blur","#xVerify",function(){
 	if($("#xVerify").val() == ""){
 		$(".xRight-con i").eq(2).text("* 请输入验证码!");
@@ -45,8 +46,15 @@ $(document).on("blur","#xVerify",function(){
 	}else{
 		$(".xRight-con i").eq(2).text("✅");
 		$(".xRight-con i").eq(2).css("visibility","visible");
+		bol = true;
 	}
 })
+	$(".xRight-con button").click(function(){
+		    console.log(bol);
+		if(bol){
+			 window.location.href  = "xUser-orders.html";
+		}	
+	})
 //刷新验证码
 $(".xRight-con span").on("click",function(){
 	  createCode();
