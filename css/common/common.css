@@ -96,6 +96,46 @@ em,i{
   font-size: 12px;
   font-family: "SimSun";
   color: rgb(42, 78, 145);
+  cursor: pointer;
+}
+.rChangeCity-main{
+	position: absolute;
+	padding-top: 3px;
+	background: white;
+	width: 200px;
+	height: 100px;
+	left: 176px;
+    top: 81px;
+    font-size: 14px;
+    border: 1px solid rgb(33,63,123);
+	display: none;
+}
+.rChangeCity-provinces,.rChangeCity-citys{
+	padding: 0 3px;
+}
+.rChangeCity-provinces span{
+	padding: 0 2px;
+	margin: 0 8px;
+	cursor: pointer;
+}
+/*.rChangeCity-provinces span:hover{
+	background: rgb(33,63,123);
+	color: white;	
+}*/
+/*蓝色分隔条*/
+.rChangeCity-line{
+	background: rgb(33,63,123);
+	height: 3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.rChangeCity-citys{
+	font-size: 10px;
+}
+.rChangeCity-citys span{
+	display: inline-block;
+	cursor: pointer;
+	margin: 3px 10px;
 }
 /*搜索栏中间主体*/
 .rSerach-main{

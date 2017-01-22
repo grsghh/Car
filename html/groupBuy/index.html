@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>车族网</title>
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/groupBuy/index.css" />
+	</head>
+
+	<body>
+		<!--主体宽976-->
+		<!--顶部小按钮-->
+		<div class="rTopBar">
+			<div class="rContainer">
+				<!--收藏夹nav-->
+				<div class="rTopBar-info">
+					<img src="../../img/common/iLike.png" />
+					<span>收藏夹</span>
+					<img src="../../img/common/iOrder.png" />
+					<span>订阅</span>
+					<img src="../../img/common/iHelp.png" />
+					<span>帮助</span>
+				</div>
+			</div>
+		</div>
+		<!--搜索栏-->
+		<div class="rSerach">
+			<div class="rContainer">
+				<!--左边内容-->
+				<div class="rSerach-left">
+					<img src="../../img/common/logo.png" / clang="logo">
+					<!--城市切换-->
+					<span class="rChangeCity">
+						<i class="rChangeCity-txt">北京</i>
+						<br />
+						<em class="rChangeCity-switch">[切换城市]</em>
+					</span>
+				</div>
+				<!--中间搜索框-->
+				<div class="rSerach-main">
+					<div class="main-title">
+						<span>高尔夫</span>
+						<span>雪铁龙</span>
+						<span>奥迪</span>
+						<span>奔驰</span>
+						<span>宝马</span>
+						<span>三轮车</span>
+					</div>
+					<div class="main-input">
+						<input type="text" class="main-serach" placeholder="搜索商户名、地址、服务等" />
+						<img src="../../img/common/mic.png" class="main-micImg" />
+						<button class="main-btn">搜索</button>
+					</div>
+				</div>
+				<!--右边400-->
+				<div class="rSerach-workTime">
+					<div>4006-630-636</div>
+					<div>每日9:00-21:00</div>
+				</div>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="rNav">
+			<div class="rContainer">
+				<!--左边页面跳转-->
+				<ul class="rNav-left">
+					<li>
+						<a href="../Homepage/homepage.html">首页</a>
+					</li>
+					<li>
+						<a href="###">服务</a>
+					</li>
+					<li>
+						<a href="../userLogin/userLogin.html">商家</a>
+					</li>
+					<li>
+						<a href="../groupBuy/index.html">团购</a>
+					</li>
+					<li>
+						<a href="###">商城</a>
+					</li>
+					<li>
+						<a href="###">社区</a>
+					</li>
+				</ul>
+				<!--右边个人部分-->
+				<ul class="rNav-right">
+					<li>
+						<img src="../../img/common/shopCar.png" />
+						<a href="">购物车</a>
+						<img src="../../img/common/down.png" />
+					</li>
+					<li>
+						<a href="">最近浏览</a>
+						<img src="../../img/common/down.png" />
+					</li>
+					<li>
+						<a href="">我的车族</a>
+					</li>
+					<li>
+						<a href="../login/login.html">登录</a>
+					</li>
+					<li>
+						<a href="../login/reg.html">注册</a>
+					</li>
+				</ul>				
+			</div>
+		</div>
+		<!--顶部ad大图-->
+		<div class="rTopAd">
+			<div class="rContainer">
+				<img src="../../img/common/close.png" class="rTopAd-close" />
+			</div>
+		</div>
+		<!--主体-->
+		<div class="main">
+			<div class="rContainer">
+				<!--未付款订单-->
+				<div class="noPay">
+					您有<em>2</em>个订单还没有付款，
+					<a href="###">快来支付吧！</a>以免团购抢光啦。
+				</div>
+				<!--导航-->
+				<div class="nav">
+					<!--热门团购-->
+					<dl class="nav-hot">
+						<dt>热门团购:</dt>
+						<dd class="hotColor">购车膜</dd>
+						<dd>团购车灯</dd>
+						<dd class="hotColor">雪铁龙</dd>
+						<dd>奥迪</dd>
+					</dl>
+					<!--分类-->
+					<div class="nav-sort">
+						<!--1-->
+						<ul class="sort-sorts">
+							<!--分类表头-->
+							<li class="sortIcon">
+								分类:
+							</li>
+							<li class="sortHead">
+								<span class="sortAll">全部</span>
+								<span class="todayNew">今日新单<em>(8)</em></span>
+								<span class="newGB">最新团购<em>(148)</em></span>
+								<span class="lastNice">过往精彩<em>(12)</em></span>
+								<span class="howGB">如何团购<em>(2)</em></span>
+								<span class="lucky">抽奖<em>(3)</em></span>
+							</li>
+							<!--分类列表-->
+							<li class="sortList">
+								<span class="sortAll">全部</span>
+								<span class="carMasks">团购车膜<em>(8)</em></span>
+								<span class="carLights">团购车灯<em>(18)</em></span>
+								<span class="carWash">团购洗车<em>(8)</em></span>
+								<span class="howGB">如何团购<em>(4)</em></span>
+								<span class="lucky">抽奖<em>(3)</em></span>
+							</li>
+						</ul>
+						<!--区域-->
+						<ul class="sort-location">
+							<!--区域表头-->
+							<li class="sortIcon">
+								区域:
+							</li>
+							<li class="sortHead">
+								<span class="sortAll">全部</span>
+								<span class="area_chaoyang">朝阳区<em>(142)</em></span>
+								<span class="area_haidian">海淀区<em>(148)</em></span>
+								<span class="area_fengtai">丰台区<em>(46)</em></span>
+								<span class="area_xicheng">西城区<em>(31)</em></span>
+								<span class="area_dongcheng">东城区<em>(35)</em></span>
+								<span class="area_shijingshan">石景山区<em>(9)</em></span>
+								<span class="area_xuanwu">宣武区<em>(12)</em></span>
+								<span class="area_tongzhou">通州区<em>(35)</em></span>
+								<span class="area_daxing">大兴区<em>(35)</em></span>
+								<span class="area_chongwen">崇文区<em>(35)</em></span>
+								<span class="area_changping">昌平区<em>(35)</em></span>
+								<span class="area_jinjiao">近郊<em>(35)</em></span>
+							</li>
+							<!--区域列表列表-->
+							<li class="sortList">
+								<span class="sortAll">全部</span>
+								<span>双榆树<em>(8)</em></span>
+								<span>上地<em>(142)</em></span>
+								<span>远大路<em>(63)</em></span>
+								<span>五棵松<em>(67)</em></span>
+								<span>魏公村<em>(3)</em></span>
+								<span>双榆树<em>(8)</em></span>
+								<span>上地<em>(142)</em></span>
+								<span>远大路<em>(63)</em></span>
+								<span>五棵松<em>(67)</em></span>
+								<span>魏公村<em>(3)</em></span>
+								<span>双榆树<em>(8)</em></span>
+								<span>上地<em>(142)</em></span>
+								<span>远大路<em>(63)</em></span>
+								<span>五棵松<em>(67)</em></span>
+								<span>魏公村<em>(3)</em></span>
+							</li>
+						</ul>
+						<!--热门-->
+						<ul class="sort-hot">
+							<!--热门表头-->
+							<li class="sortIcon">
+								热门:
+							</li>
+							<li class="sortHead">
+								<span class="sortAll">车膜</span>
+								<span>团购车灯</span>
+								<span>团购车灯</span>
+								<span>团购车灯</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--排序-->
+				<ul class="nav-reorder">
+					<li class="reorder-left">
+						<span>默认排序:</span>
+						<a href="###" class="reorder-sell">销量<i></i></a>
+						<a href="###" class="reorder-price">价格<i></i></a>
+						<a href="###" class="reorder-sale">折扣<i></i></a>
+						<a href="###" class="reorder-time">发布时间<i></i></a>
+					</li>
+					<li class="reorder-right">
+						<span><input type="checkbox" class="noBook"/> 免预约</span>
+						<span><input type="checkbox" class="voucher"/> 代金券</span>
+					</li>
+				</ul>
+				<!--产品列表-->
+				<div class="main-proList">
+					<!--左边主产品区-->
+					<ul class="proList-left">
+						<li class="pros">
+							<!--产品图片-->
+							<div class="proImg">
+								<img src="../../img/groupBuy/pro1.png" />
+							</div>
+							<!--产品名-->
+							<div class="proName">【2店通用】和平里4S店</div>
+							<!--产品简介-->
+							<div class="proIntr">
+								仅1650元享原价3760元汽车顶级贴膜套餐挡 膜餐挡餐挡
+							</div>
+							<!--产品信息-->
+							<div class="proInfo">
+								<!--标签-->
+								<span class="proInfo-label">
+									<strong class="proInfo-price">￥225</strong>
+									<em>门店价:￥980</em>
+								</span>
+								<span class="proInfo-state">
+									<span>
+										去看看
+									</span>
+								<i>23333</i> 人已购买
+								</span>
+							</div>
+						</li>
+						<li class="pros">
+							<!--产品图片-->
+							<div class="proImg">
+								<img src="../../img/groupBuy/pro2.png" />
+							</div>
+							<!--产品名-->
+							<div class="proName">【2店通用】和平里4S店</div>
+							<!--产品简介-->
+							<div class="proIntr">
+								仅1650元享原价3760元汽车顶级贴膜挡膜
+							</div>
+							<!--产品信息-->
+							<div class="proInfo">
+								<!--标签-->
+								<span class="proInfo-label">
+									<strong class="proInfo-price">￥1365</strong>
+									<em>门店价:￥980</em>
+								</span>
+								<span class="proInfo-state">
+									<span class="sellOut">
+										卖完了
+									</span>
+								<i>23333</i> 人已购买
+								</span>
+							</div>
+						</li>
+						<li class="pros">
+							<!--产品图片-->
+							<div class="proImg">
+								<img src="../../img/groupBuy/pro1.png" />
+							</div>
+							<!--产品名-->
+							<div class="proName">【2店通用】和平里4S店</div>
+							<!--产品简介-->
+							<div class="proIntr">
+								仅1650元享原价3760元汽车顶级贴膜套餐挡 膜餐挡餐挡
+							</div>
+							<!--产品信息-->
+							<div class="proInfo">
+								<!--标签-->
+								<span class="proInfo-label">
+									<strong class="proInfo-price">￥225</strong>
+									<em>门店价:￥980</em>
+								</span>
+								<span class="proInfo-state">
+									<span>
+										去看看
+									</span>
+								<i>23333</i> 人已购买
+								</span>
+							</div>
+						</li>
+						<li class="pros">
+							<!--产品图片-->
+							<div class="proImg">
+								<img src="../../img/groupBuy/pro2.png" />
+							</div>
+							<!--产品名-->
+							<div class="proName">【2店通用】和平里4S店</div>
+							<!--产品简介-->
+							<div class="proIntr">
+								仅1650元享原价3760元汽车顶级贴膜挡膜
+							</div>
+							<!--产品信息-->
+							<div class="proInfo">
+								<!--标签-->
+								<span class="proInfo-label">
+									<strong class="proInfo-price">￥1365</strong>
+									<em>门店价:￥980</em>
+								</span>
+								<span class="proInfo-state">
+									<span class="sellOut">
+										卖完了
+									</span>
+								<i>23333</i> 人已购买
+								</span>
+							</div>
+						</li>
+						<li class="pros">
+							<!--产品图片-->
+							<div class="proImg">
+								<img src="../../img/groupBuy/pro1.png" />
+							</div>
+							<!--产品名-->
+							<div class="proName">【2店通用】和平里4S店</div>
+							<!--产品简介-->
+							<div class="proIntr">
+								仅1650元享原价3760元汽车顶级贴膜套餐挡 膜餐挡餐挡
+							</div>
+							<!--产品信息-->
+							<div class="proInfo">
+								<!--标签-->
+								<span class="proInfo-label">
+									<strong class="proInfo-price">￥225</strong>
+									<em>门店价:￥980</em>
+								</span>
+								<span class="proInfo-state">
+									<span>
+										去看看
+									</span>
+								<i>23333</i> 人已购买
+								</span>
+							</div>
+						</li>
+						<li class="pros">
+							<!--产品图片-->
+							<div class="proImg">
+								<img src="../../img/groupBuy/pro2.png" />
+							</div>
+							<!--产品名-->
+							<div class="proName">【2店通用】和平里4S店</div>
+							<!--产品简介-->
+							<div class="proIntr">
+								仅1650元享原价3760元汽车顶级贴膜挡膜
+							</div>
+							<!--产品信息-->
+							<div class="proInfo">
+								<!--标签-->
+								<span class="proInfo-label">
+									<strong class="proInfo-price">￥1365</strong>
+									<em>门店价:￥980</em>
+								</span>
+								<span class="proInfo-state">
+									<span class="sellOut">
+										卖完了
+									</span>
+								<i>23333</i> 人已购买
+								</span>
+							</div>
+						</li>
+						<li class="pros">
+							<!--产品图片-->
+							<div class="proImg">
+								<img src="../../img/groupBuy/pro1.png" />
+							</div>
+							<!--产品名-->
+							<div class="proName">【2店通用】和平里4S店</div>
+							<!--产品简介-->
+							<div class="proIntr">
+								仅1650元享原价3760元汽车顶级贴膜套餐挡 膜餐挡餐挡
+							</div>
+							<!--产品信息-->
+							<div class="proInfo">
+								<!--标签-->
+								<span class="proInfo-label">
+									<strong class="proInfo-price">￥225</strong>
+									<em>门店价:￥980</em>
+								</span>
+								<span class="proInfo-state">
+									<span>
+										去看看
+									</span>
+								<i>23333</i> 人已购买
+								</span>
+							</div>
+						</li>
+						<li class="pros">
+							<!--产品图片-->
+							<div class="proImg">
+								<img src="../../img/groupBuy/pro2.png" />
+							</div>
+							<!--产品名-->
+							<div class="proName">【2店通用】和平里4S店</div>
+							<!--产品简介-->
+							<div class="proIntr">
+								仅1650元享原价3760元汽车顶级贴膜挡膜
+							</div>
+							<!--产品信息-->
+							<div class="proInfo">
+								<!--标签-->
+								<span class="proInfo-label">
+									<strong class="proInfo-price">￥1365</strong>
+									<em>门店价:￥980</em>
+								</span>
+								<span class="proInfo-state">
+									<span class="sellOut">
+										卖完了
+									</span>
+								<i>23333</i> 人已购买
+								</span>
+							</div>
+						</li>
+						<li class="pros">
+							<!--产品图片-->
+							<div class="proImg">
+								<img src="../../img/groupBuy/pro1.png" />
+							</div>
+							<!--产品名-->
+							<div class="proName">【2店通用】和平里4S店</div>
+							<!--产品简介-->
+							<div class="proIntr">
+								仅1650元享原价3760元汽车顶级贴膜套餐挡 膜餐挡餐挡
+							</div>
+							<!--产品信息-->
+							<div class="proInfo">
+								<!--标签-->
+								<span class="proInfo-label">
+									<strong class="proInfo-price">￥225</strong>
+									<em>门店价:￥980</em>
+								</span>
+								<span class="proInfo-state">
+									<span>
+										去看看
+									</span>
+								<i>23333</i> 人已购买
+								</span>
+							</div>
+						</li>
+						<li class="pros">
+							<!--产品图片-->
+							<div class="proImg">
+								<img src="../../img/groupBuy/pro2.png" />
+							</div>
+							<!--产品名-->
+							<div class="proName">【2店通用】和平里4S店</div>
+							<!--产品简介-->
+							<div class="proIntr">
+								仅1650元享原价3760元汽车顶级贴膜挡膜
+							</div>
+							<!--产品信息-->
+							<div class="proInfo">
+								<!--标签-->
+								<span class="proInfo-label">
+									<strong class="proInfo-price">￥1365</strong>
+									<em>门店价:￥980</em>
+								</span>
+								<span class="proInfo-state">
+									<span class="sellOut">
+										卖完了
+									</span>
+								<i>23333</i> 人已购买
+								</span>
+							</div>
+						</li>
+					</ul>
+					<!--右边-->
+					<ul class="proList-right">
+						<!--车族网承诺-->
+						<li class="promise">
+							<div class="promise-title">
+								车族网承诺
+							</div>
+							<div class="promise-intr">
+								<div>
+									<img src="../../img/groupBuy/icon1.png" />
+									<br />
+									<span>7天退款</span>
+								</div>
+								<div>
+									<img src="../../img/groupBuy/icon2.png" />
+									<br />
+									<span>品质保证</span>
+								</div>
+								<div>
+									<img src="../../img/groupBuy/icon3.png" />
+									<br />
+									<span>过期退款</span>
+								</div>
+							</div>
+						</li>
+						<!--客服-->
+						<li class="service">
+							<dl class="right-service">
+								<dt>车族客服</dt>
+								<dd>
+									<i></i> 4006-630-636
+								</dd>
+								<dd>工作时间：每日9：00 -21：00</dd>
+							</dl>
+						</li>
+						<!--热销排行-->
+						<li class="hotRank">
+							<div class="hotRank-title">
+								热卖排行榜
+							</div>
+							<dl class="hotRank-rankInfo">
+								<dt class="rankInfo-title">
+									<i class="rank-1">1</i>
+									【朝阳东四店】第三代全时轿车
+								</dt>
+								<dd class="rankInfo-info">
+									<div class="rankInfo-img">
+										<img src="../../img/groupBuy/car1.png" />
+									</div>
+									<div class="rankInfo-price">
+										<span class="hotCarPrice">￥98</span>
+										<br />
+										<span class="hotCarCount">每月<em>60</em>人已购买</span>
+									</div>
+								</dd>
+							</dl>
+							<dl class="hotRank-rankInfo">
+								<dt class="rankInfo-title">
+									<i class="rank-2">2</i>
+									【朝阳东四店】第三代全时轿车
+								</dt>
+								<dd class="rankInfo-info">
+									<div class="rankInfo-img">
+										<img src="../../img/groupBuy/car1.png" />
+									</div>
+									<div class="rankInfo-price">
+										<span class="hotCarPrice">￥98</span>
+										<br />
+										<span class="hotCarCount">每月<em>60</em>人已购买</span>
+									</div>
+								</dd>
+							</dl>
+							<dl class="hotRank-rankInfo">
+								<dt class="rankInfo-title">
+									<i class="rank-3">3</i>
+									【朝阳东四店】第三代全时轿车
+								</dt>
+								<dd class="rankInfo-info">
+									<div class="rankInfo-img">
+										<img src="../../img/groupBuy/car2.png" />
+									</div>
+									<div class="rankInfo-price">
+										<span class="hotCarPrice">￥98</span>
+										<br />
+										<span class="hotCarCount">每月<em>60</em>人已购买</span>
+									</div>
+								</dd>
+							</dl>
+							<dl class="hotRank-rankInfo">
+								<dt class="rankInfo-title">
+									<i class="rank-4">4</i>
+									【朝阳东四店】第三代全时轿车
+								</dt>
+								<dd class="rankInfo-info">
+									<div class="rankInfo-img">
+										<img src="../../img/groupBuy/car1.png" />
+									</div>
+									<div class="rankInfo-price">
+										<span class="hotCarPrice">￥98</span>
+										<br />
+										<span class="hotCarCount">每月<em>60</em>人已购买</span>
+									</div>
+								</dd>
+							</dl>
+							<dl class="hotRank-rankInfo">
+								<dt class="rankInfo-title">
+									<i class="rank-5">5</i>
+									【朝阳东四店】第三代全时轿车
+								</dt>
+								<dd class="rankInfo-info">
+									<div class="rankInfo-img">
+										<img src="../../img/groupBuy/car1.png" />
+									</div>
+									<div class="rankInfo-price">
+										<span class="hotCarPrice">￥98</span>
+										<br />
+										<span class="hotCarCount">每月<em>60</em>人已购买</span>
+									</div>
+								</dd>
+							</dl>
+						</li>
+						<!--抽奖活动-->
+						<li class="right-lottery">
+							<i></i>
+							<div>
+								<em>0元抽奖是真的吗？</em><br />
+								<span>车族圆梦系列抽奖>></span>
+							</div>
+							<div>
+								<i></i>
+								<em>北京运通嘉宝S4</em>
+								<span>抽奖结果</span>
+							</div>
+							<div>
+								<i></i>
+								<em>博瑞祥云奥迪购车惠</em>
+								<span>火爆进行中</span>
+							</div>
+							<div>
+								<i></i>
+								<em>购BMW3系尊享万元开业礼</em>
+								<span>火爆进行中</span>
+							</div>
+						</li>
+						<!--最近浏览-->
+						<li class="lastView">
+							<div class="hotRank-title">
+								最近浏览过
+								<a href="###" class="clearView">清空</a>
+							</div>
+							<dl class="hotRank-rankInfo">
+								<dd class="rankInfo-info">
+									<div class="rankInfo-img">
+										<img src="../../img/groupBuy/car1.png" />
+									</div>
+									<div class="rankInfo-price">
+										<span class="lastView-title">【2店通用】和平里4S仅1650元享原价3760元</span>
+										<br />
+										<span class="lastView-info"><em>60</em>人已购买</span>
+									</div>
+								</dd>
+							</dl>
+							<dl class="hotRank-rankInfo">
+								<dd class="rankInfo-info">
+									<div class="rankInfo-img">
+										<img src="../../img/groupBuy/car1.png" />
+									</div>
+									<div class="rankInfo-price">
+										<span class="lastView-title">【2店通用】和平里4S仅1650元享原价3760元</span>
+										<br />
+										<span class="lastView-info"><em>60</em>人已购买</span>
+									</div>
+								</dd>
+							</dl>
+							<dl class="hotRank-rankInfo">
+								<dd class="rankInfo-info">
+									<div class="rankInfo-img">
+										<img src="../../img/groupBuy/car1.png" />
+									</div>
+									<div class="rankInfo-price">
+										<span class="lastView-title">【2店通用】和平里4S仅1650元享原价3760元</span>
+										<br />
+										<span class="lastView-info"><em>60</em>人已购买</span>
+									</div>
+								</dd>
+							</dl>
+							<dl class="hotRank-rankInfo">
+								<dd class="rankInfo-info">
+									<div class="rankInfo-img">
+										<img src="../../img/groupBuy/car2.png" />
+									</div>
+									<div class="rankInfo-price">
+										<span class="lastView-title">【2店通用】和平里4S仅1650元享原价3760元</span>
+										<br />
+										<span class="lastView-info"><em>60</em>人已购买</span>
+									</div>
+								</dd>
+							</dl>
+						</li>
+						<!--最新通知-->
+						<li class="newNotice">
+							<div class="hotRank-title">
+								最新通知
+							</div>
+							<div class="newNotice-details">
+								<i></i>可以在线申请七天退款了! <a href="###">详情</a>
+							</div>
+							<div class="newNotice-details">
+								<i></i><a href="###">详情</a>, 手机抢购更方便!
+							</div>
+							<div class="newNotice-details">
+								<i></i>最新 <a href="###">媒体报道</a>
+							</div>
+						</li>
+						<!--商务合作-->
+						<li class="business">
+							<div class="hotRank-title">
+								合作商务
+							</div>
+							<div class="business-img">
+								<img src="../../img/common/icon1.png"/>
+							</div>
+							<div>团购让更多的人了解您的店</div>
+							<div class="reflect"><img src="../../img/common/joinus.png"/></div>
+							<div>我们期待您的加盟</div>
+						</li>
+					</ul>
+					<!--分页-->
+					<div class="proList-pageCount">
+						<ul class="pageCount-main">
+							<li class="pageCount-pre">
+								<i></i>上一页
+							</li>
+							<li>1</li>
+							<li class="pageOn">2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li class="pageCount-next">							
+								下一页
+								<i></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--点击返回顶部-->
+				<div id="back-top">
+					<img src="../../img/common/backTop.png"/>
+				</div>
+		</div>
+		
+		<!--底部公共样式-->
+		<div class="rFooter">
+			<div class="rContainer">
+				<!--网站信息-->
+				<div class="rWebInfo">
+					<!--帮助中心-->
+					<dl class="rWebInfo-help">
+						<dt>帮助中心</dt>
+						<dd>
+							<a href="###">◇ 购买流程</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 找回密码</a>
+						</dd>
+					</dl>
+					<!--微博-->
+					<dl class="rWebInfo-weibo">
+						<dt>官方微博</dt>
+						<dd>
+							<a href="###">◇ 新浪微博</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 腾讯微博</a>
+						</dd>
+					</dl>
+					<!--商务合作-->
+					<dl class="rWebInfo-coop">
+						<dt>商务合作</dt>
+						<dd>
+							<a href="###">◇ 商户登录</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 业务合作</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 开放API</a>
+						</dd>
+					</dl>
+					<!--关于我们-->
+					<dl class="rWebInfo-aboutUs">
+						<dt>关于我们</dt>
+						<dd>
+							<a href="###">◇ 公司简介</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 联系我们</a>
+						</dd>
+						<dd>
+							<a href="###">◇ 加入我们</a>
+						</dd>
+					</dl>
+					<div class="rWebInfo-contact">
+						<i>客服电话（免长途费）</i>
+						<br />
+						<strong>4006-630-636</strong>
+					</div>
+				</div>
+				<!--网站备案信息-->
+				<div class="rwebRecode">
+					<p>京ICP证110457号 京ICP备11014893号 北京双立人网络科技有限公司 版权所有 Copyright © 2011 iCarZoo.COM All Rights Reserved</p>
+				</div>
+				<!--网站备案图片-->
+				<div class="rwebRecodeImg">
+					<a href="###">
+						<img src="../../img/common/web1.png" />
+					</a>
+					<a href="###">
+						<img src="../../img/common/web2.png" />
+					</a>
+					<a href="###">
+						<img src="../../img/common/web3.png" />
+					</a>
+					<a href="###">
+						<img src="../../img/common/web4.png" />
+					</a>
+				</div>
+				<!--友情链接-->
+				<div class="rFriend">
+					<a href="###">腾讯汽车</a>
+					<a href="###">凤凰网汽车</a>
+					<a href="###">MSN汽车</a>
+					<a href="###">北京团购网</a>
+					<a href="###">360网址导航</a>
+					<a href="###">北京团购网</a>
+					<a href="###">北京团购</a>
+					<a href="###">金山网址导航</a>
+					<a href="###">特米购物</a>
+					<a href="###">团购网站大全</a>
+					<a href="###">114网址导航</a>
+					<a href="###">114啦网址导航</a>
+					<a href="###">团购大全</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/common/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/groupBuy/index.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
