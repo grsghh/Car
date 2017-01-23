@@ -657,7 +657,7 @@
 					<div class="content-right-top">
 						<div>
 							<img src="../../img/Homepage/add.png" alt="" />
-							<span>添加我的店</span>
+							<span style="cursor: pointer;">添加我的店</span>
 						</div>
 						<div></div>
 						<div></div>
@@ -916,4 +916,9 @@
    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	<script src="../../js/Homepage/homepage.js"></script>
 	<script src="../../js/common/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".content-right-top span").click(function(){
+			window.location.href = "../userLogin/add-shop.html";
+		})
+	</script>
 </html>
